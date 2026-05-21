@@ -3,7 +3,6 @@ package de.josan.backrooms;
 import de.josan.backrooms.command.BackroomsCommand;
 import de.josan.backrooms.command.SpeedCommand;
 import de.josan.backrooms.sound.ModSounds;
-import de.josan.backrooms.worldgen.biome.ModBiomes;
 import de.josan.backrooms.block.ModBlocks;
 import de.josan.backrooms.effect.ModEffects;
 import de.josan.backrooms.entity.ModEntities;
@@ -67,9 +66,6 @@ public class Backrooms implements ModInitializer {
 
         //Effects
         ModEffects.registerEffects();
-
-        //Biomes
-        ModBiomes.registerModBiomes();
 
         //Sounds
         ModSounds.registerSounds();
