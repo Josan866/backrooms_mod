@@ -69,7 +69,7 @@ public class Backrooms implements ModInitializer {
         ModEffects.registerEffects();
 
         //Biomes
-        //ModBiomes.registerModBiomes();
+        ModBiomes.registerModBiomes();
 
         //Sounds
         ModSounds.registerSounds();
