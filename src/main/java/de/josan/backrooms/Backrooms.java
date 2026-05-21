@@ -72,7 +72,7 @@ public class Backrooms implements ModInitializer {
         ModBiomes.registerModBiomes();
 
         //Sounds
-        ModSounds.registerSounds();
+        //ModSounds.registerSounds();
 
         //Commands
         CommandRegistrationCallback.EVENT.register(((dispatcher, registryAccess, environment) -> {
