@@ -1,0 +1,8 @@
+{
+  "comparator_output": 6,
+  "description": {
+    "translate": "item.backrooms.music_disc_judas.desc"
+  },
+  "length_in_seconds": 249.0,
+  "sound_event": "backrooms:judas"
+}

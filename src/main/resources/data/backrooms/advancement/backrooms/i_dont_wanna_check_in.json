@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "backrooms:advancement_02",
+      "count": 1
+    },
+    "title": "I don't wanna check in...",
+    "description": "Reach the \"Hotel Dinner Rooms\"",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "backrooms:backrooms/jump_and_run",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:summoned_entity",
+      "conditions": {
+        "entity": {
+          "type": "backrooms:deer"
+        }
+      }
+    }
+  }
+}

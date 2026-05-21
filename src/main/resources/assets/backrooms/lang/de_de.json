@@ -1,0 +1,35 @@
+{
+  "function.access_denied": "Du hast nicht genug Rechte um das zu verwenden",
+  "function.indevelopment": "Im Development",
+
+  "itemgroup.backrooms": "Backrooms",
+
+  "commands.early_access": "Nur für EarlyAccess Mitglieder",
+  "commands.only_patreon": "Nur für Patreon Supporters",
+  "commands.access_denied": "Du hast nicht genug Rechte um den Command zu verwenden",
+  "commands.troll": "A,a,Aa ... Du hast das Zauberwort nicht gesagt",
+  "commands.player": "Spieler online: %1$s",
+
+  "block.backrooms.abyss_black": "Schwarzes Abyss",
+  "block.backrooms.abyss_white": "Weißes Abyss",
+
+  "item.backrooms.backrooms_icon": "Backrooms",
+  "item.backrooms.almond_water": "Mandel Wasser",
+  "item.backrooms.deer_spawn_egg": "Hirsch-Spawn-Ei",
+  "item.backrooms.spawn_relocate": "Spawn Relocater",
+  "item.backrooms.music_disc_one_day_some_day": "Schallplatte",
+  "item.backrooms.music_disc_jane": "Schallplatte",
+  "item.backrooms.music_disc_memory": "Schallplatte",
+  "item.backrooms.music_disc_rick": "Schallplatte",
+
+  "item.backrooms.music_disc_one_day_some_day.desc": "Laufey - Eines tages Eines males",
+  "item.backrooms.music_disc_jane.desc": "The Long Fcaes - Janett!",
+  "item.backrooms.music_disc_memory.desc": "The Caretaker - Just A Burning Memory",
+  "item.backrooms.music_disc_rick.desc": "Gustav - Richard Rolle",
+
+  "entity.backrooms.deer": "Hirsch",
+
+  "effect.backrooms.sanity": "Verstand",
+  "effect.backrooms.slimey": "Schleimig",
+  "effect.backrooms.sunshy": "Sun Shy"
+}

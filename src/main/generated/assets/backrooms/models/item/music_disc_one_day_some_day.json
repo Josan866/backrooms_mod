@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "backrooms:item/music_disc_one_day_some_day"
+  }
+}

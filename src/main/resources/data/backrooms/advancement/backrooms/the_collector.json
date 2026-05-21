@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "backrooms:advancement_06",
+      "count": 1
+    },
+    "title": "The Collector",
+    "description": "Collect all Music Discs",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "backrooms:backrooms/keeping_me_sane",
+  "criteria": {
+    "Disc": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "backrooms:music_disc_rick"
+        }
+      }
+    }
+  }
+}

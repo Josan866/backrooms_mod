@@ -1,0 +1,35 @@
+{
+  "function.access_denied": "ʇɐɥʇ ǝsn oʇ suoᴉssᴉɯɹǝd ɥᵷnouǝ ǝʌɐɥ ʇ,uop no⅄",
+  "function.indevelopment": "ʇuǝɯdoꞁǝʌǝᗡ uI",
+
+  "itemgroup.backrooms": "sɯooɹʞɔɐᗺ",
+
+  "commands.early_access": "sɹǝqɯǝɯ ssǝɔɔⱯʎʅɹɐƎ ɹoⅎ ʎʅuO",
+  "commands.only_patreon": "sɹǝʇɹoddnS uoǝɹʇɐԀ ɹoⅎ ʎʅuO",
+  "commands.access_denied": "puɐɯɯoϽ ʇɐɥʇ ǝsn oʇ suoᴉssᴉɯɹǝd ɥᵷnouǝ ǝʌɐɥ ʇ,uop no⅄",
+  "commands.troll": "ʇᵷɐsǝᵷ ʇɥɔᴉu ʇɹoʍɹǝqnɐZ sɐp ʇsɐɥ nᗡ ... ɐⱯʻɐʻⱯ",
+  "commands.player": "%1$s :ǝuᴉꞁuo sɹǝʎɐꞁԀ",
+
+  "block.backrooms.abyss_black": "ssʎqⱯ ʞɔɐꞁᗺ",
+  "block.backrooms.abyss_white": "ssʎqⱯ ǝʇᴉɥM",
+
+  "item.backrooms.backrooms_icon": "sɯooɹʞɔɐᗺ",
+  "item.backrooms.almond_water": "ɹǝʇɐM puoɯꞁⱯ",
+  "item.backrooms.deer_spawn_egg": "ᵷᵷƎ uʍɐdS ɹǝǝᗡ",
+  "item.backrooms.spawn_relocate": "Relocater uʍɐdS",
+  "item.backrooms.music_disc_one_day_some_day": "Music Disc",
+  "item.backrooms.music_disc_jane": "Music Disc",
+  "item.backrooms.music_disc_memory": "Music Disc",
+  "item.backrooms.music_disc_rick": "Music Disc",
+
+  "item.backrooms.music_disc_one_day_some_day.desc": "Laufey - One day some day",
+  "item.backrooms.music_disc_jane.desc": "The Long Fcaes - Jane!",
+  "item.backrooms.music_disc_memory.desc": "The Caretaker - Just A Burning Memory",
+  "item.backrooms.music_disc_rick.desc": "Gustav - Richard Rolle",
+
+  "entity.backrooms.deer": "ɹǝǝᗡ",
+
+  "effect.backrooms.sanity": "ʎʇᴉuɐS",
+  "effect.backrooms.slimey": "ʎǝɯᴉꞁS",
+  "effect.backrooms.sunshy": "ʎɥS unS"
+}

@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "backrooms:backrooms_icon",
+      "count": 1
+    },
+    "title": "Backrooms",
+    "description": "Enter the Backrooms",
+    "background": "backrooms:textures/block/abyss_white.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "jsws_josan:the_bacr00ms"
+      }
+    }
+  }
+}

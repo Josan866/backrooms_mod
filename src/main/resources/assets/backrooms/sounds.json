@@ -1,0 +1,74 @@
+{
+  "one_day_some_day": {
+    "sounds": [
+      {
+        "name": "backrooms:one_day_some_day",
+        "stream": true
+      }
+    ]
+  },
+  "jane": {
+    "sounds": [
+      {
+        "name": "backrooms:jane",
+        "stream": true
+      }
+    ]
+  },
+  "memory": {
+    "sounds": [
+      {
+        "name": "backrooms:memory",
+        "stream": true
+      }
+    ]
+  },
+  "judas": {
+    "sounds": [
+      {
+        "name": "backrooms:judas",
+        "stream": true
+      }
+    ]
+  },
+  "bubble_pop_electric": {
+    "sounds": [
+      {
+        "name": "backrooms:bpe",
+        "stream": true
+      }
+    ]
+  },
+  "aizo": {
+    "sounds": [
+      {
+        "name": "backrooms:aizo",
+        "stream": true
+      }
+    ]
+  },
+  "specialz": {
+    "sounds": [
+      {
+        "name": "backrooms:specialz",
+        "stream": true
+      }
+    ]
+  },
+  "meet_again": {
+    "sounds": [
+      {
+        "name": "backrooms:meet_again",
+        "stream": true
+      }
+    ]
+  },
+  "rick": {
+    "sounds": [
+      {
+        "name": "backrooms:rick",
+        "stream": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "backrooms:advancement_09",
+      "count": 1
+    },
+    "title": "so im just trapped here now?",
+    "description": "Die for the first time in the backrooms",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "backrooms:backrooms/shit_your_pants",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:summoned_entity",
+      "conditions": {
+        "entity": {
+          "type": "backrooms:deer"
+        }
+      }
+    }
+  }
+}

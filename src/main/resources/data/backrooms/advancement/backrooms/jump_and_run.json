@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "backrooms:advancement_08",
+      "count": 1
+    },
+    "title": "Master Detective",
+    "description": "Escape Level Jump and Run (I know you used a cypher decoder you filthy little-)",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "backrooms:backrooms/run_boy_run",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:summoned_entity",
+      "conditions": {
+        "entity": {
+          "type": "backrooms:deer"
+        }
+      }
+    }
+  }
+}

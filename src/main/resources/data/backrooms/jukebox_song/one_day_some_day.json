@@ -1,0 +1,8 @@
+{
+  "comparator_output": 9,
+  "description": {
+    "translate": "item.backrooms.music_disc_one_day_some_day.desc"
+  },
+  "length_in_seconds": 269.0,
+  "sound_event": "backrooms:one_day_some_day"
+}

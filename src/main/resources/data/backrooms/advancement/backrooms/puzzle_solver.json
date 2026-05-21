@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "backrooms:advancement_03",
+      "count": 1
+    },
+    "title": "Puzzle Solver",
+    "description": "Escape Level Sewer",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "backrooms:backrooms/cowords_way_out",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:summoned_entity",
+      "conditions": {
+        "entity": {
+          "type": "backrooms:deer"
+        }
+      }
+    }
+  }
+}

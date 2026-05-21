@@ -1,0 +1,8 @@
+{
+  "comparator_output": 9,
+  "description": {
+    "translate": "item.backrooms.music_disc_memory.desc"
+  },
+  "length_in_seconds": 212.0,
+  "sound_event": "backrooms:memory"
+}

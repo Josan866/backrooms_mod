@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "backrooms:advancement_05",
+      "count": 1
+    },
+    "title": "Dream Vanquished",
+    "description": "Escape the Backrooms",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "backrooms:backrooms/i_dont_wanna_check_in",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:summoned_entity",
+      "conditions": {
+        "entity": {
+          "type": "backrooms:deer"
+        }
+      }
+    }
+  }
+}

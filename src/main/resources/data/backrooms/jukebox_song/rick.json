@@ -1,0 +1,8 @@
+{
+  "comparator_output": 1,
+  "description": {
+    "translate": "item.backrooms.music_disc_rick.desc"
+  },
+  "length_in_seconds": 17.0,
+  "sound_event": "backrooms:rick"
+}

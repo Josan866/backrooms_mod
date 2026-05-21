@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "backrooms",
+	"version": "${version}",
+	"name": "Backrooms",
+	"description": "This is a Mod for ReturnSMP.",
+	"authors": [
+		"Josan"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/backrooms/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"de.josan.backrooms.Backrooms"
+		],
+        "client": [
+            "de.josan.backrooms.BackroomsClient"
+        ],
+		"fabric-datagen": [
+			"de.josan.backrooms.BackroomsDataGenerator"
+		]
+	},
+	"mixins": [
+		"backrooms.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

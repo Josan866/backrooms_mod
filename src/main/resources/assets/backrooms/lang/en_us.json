@@ -1,0 +1,51 @@
+{
+  "function.access_denied": "You don't have enough permissions to use that",
+  "function.indevelopment": "In Development",
+
+  "itemgroup.backrooms": "Backrooms",
+
+  "commands.early_access": "Only for EarlyAccess members",
+  "commands.only_patreon": "Only for Patreon Supporters",
+  "commands.access_denied": "You don't have enough permissions to use that Command",
+  "commands.troll": "A,a,Aa ... Du hast das Zauberwort nicht gesagt",
+  "commands.player": "Players online: %s",
+  "commands.failed": "Something went wrong",
+  "commands.exit_backrooms_denied": "You think you're clever? Access denied.",
+  "commands.backrooms_test": "Speed: %s",
+
+  "block.backrooms.abyss_black": "Black Abyss",
+  "block.backrooms.abyss_white": "White Abyss",
+  "block.backrooms.wall": "Wallpaper",
+  "block.backrooms.backrooms_door_locked": "Backdoor-Locked",
+  "block.backrooms.backrooms_door": "Backdoor",
+
+  "item.backrooms.backrooms_icon": "Backrooms",
+  "item.backrooms.almond_water": "Almond Water",
+  "item.backrooms.deer_spawn_egg": "Deer Spawn Egg",
+  "item.backrooms.spawn_relocate": "Spawn Relocater",
+  "item.backrooms.music_disc_one_day_some_day": "Music Disc",
+  "item.backrooms.music_disc_jane": "Music Disc",
+  "item.backrooms.music_disc_memory": "Music Disc",
+  "item.backrooms.music_disc_judas": "Music Disc",
+  "item.backrooms.music_disc_bubble_pop_electric": "Music Disc",
+  "item.backrooms.music_disc_aizo": "Music Disc",
+  "item.backrooms.music_disc_specialz": "Music Disc",
+  "item.backrooms.music_disc_meet_again": "Music Disc",
+  "item.backrooms.music_disc_rick": "Music Disc",
+
+  "item.backrooms.music_disc_one_day_some_day.desc": "Laufey - One day some day",
+  "item.backrooms.music_disc_jane.desc": "The Long Fcaes - Jane!",
+  "item.backrooms.music_disc_memory.desc": "The Caretaker - Just A Burning Memory",
+  "item.backrooms.music_disc_judas.desc": "Lady Gaga - Judas",
+  "item.backrooms.music_disc_bubble_pop_electric.desc": "Gwen Stefani - Bubble Pop Electric",
+  "item.backrooms.music_disc_aizo.desc": "KingGnu - AIZO",
+  "item.backrooms.music_disc_specialz.desc": "KingGnu - SPECIALZ",
+  "item.backrooms.music_disc_meet_again.desc": "Ratte49 - We'll meet again",
+  "item.backrooms.music_disc_rick.desc": "Gustav - Richard Rolle",
+
+  "entity.backrooms.deer": "Deer",
+
+  "effect.backrooms.sanity": "Sanity",
+  "effect.backrooms.slimey": "Slimey",
+  "effect.backrooms.sunshy": "Sun Shy"
+}

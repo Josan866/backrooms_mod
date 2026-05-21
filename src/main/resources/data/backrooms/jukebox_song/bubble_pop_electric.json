@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.backrooms.music_disc_bubble_pop_electric.desc"
+  },
+  "length_in_seconds": 223.0,
+  "sound_event": "backrooms:bubble_pop_electric"
+}

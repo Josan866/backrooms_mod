@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "backrooms:almond_water",
+      "count": 1
+    },
+    "title": "Keeping me sane",
+    "description": "Drink your first almond water",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "backrooms:backrooms/root",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "backrooms:almond_water"
+        }
+      }
+    }
+  }
+}

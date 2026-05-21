@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "backrooms:block/backrooms_door_locked_bottom",
+    "top": "backrooms:block/backrooms_door_locked_top"
+  }
+}

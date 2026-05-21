@@ -1,0 +1,8 @@
+{
+  "comparator_output": 12,
+  "description": {
+    "translate": "item.backrooms.music_disc_meet_again.desc"
+  },
+  "length_in_seconds": 184.0,
+  "sound_event": "backrooms:meet_again"
+}
