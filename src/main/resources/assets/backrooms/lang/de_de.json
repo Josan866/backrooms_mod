@@ -12,6 +12,9 @@
 
   "block.backrooms.abyss_black": "Schwarzes Abyss",
   "block.backrooms.abyss_white": "Weißes Abyss",
+  "block.backrooms.wall": "Tapete",
+  "block.backrooms.backrooms_door_locked": "Backdoor-Verschlossen",
+  "block.backrooms.backrooms_door": "Backdoor",
 
   "item.backrooms.backrooms_icon": "Backrooms",
   "item.backrooms.almond_water": "Mandel Wasser",
