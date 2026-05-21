@@ -20,12 +20,22 @@
   "item.backrooms.music_disc_one_day_some_day": "Schallplatte",
   "item.backrooms.music_disc_jane": "Schallplatte",
   "item.backrooms.music_disc_memory": "Schallplatte",
+  "item.backrooms.music_disc_judas": "Schallplatte",
+  "item.backrooms.music_disc_bubble_pop_electric": "Schallplatte",
+  "item.backrooms.music_disc_aizo": "Schallplatte",
+  "item.backrooms.music_disc_specialz": "Schallplatte",
+  "item.backrooms.music_disc_meet_again": "Schallplatte",
   "item.backrooms.music_disc_rick": "Schallplatte",
 
   "item.backrooms.music_disc_one_day_some_day.desc": "Laufey - Eines tages Eines males",
   "item.backrooms.music_disc_jane.desc": "The Long Fcaes - Janett!",
   "item.backrooms.music_disc_memory.desc": "The Caretaker - Just A Burning Memory",
-  "item.backrooms.music_disc_rick.desc": "Gustav - Richard Rolle",
+  "item.backrooms.music_disc_judas.desc": "Lady Gaga - Judas",
+  "item.backrooms.music_disc_bubble_pop_electric.desc": "Gwen Stefani - Bubble Pop Electric",
+  "item.backrooms.music_disc_aizo.desc": "KingGnu - AIZO",
+  "item.backrooms.music_disc_specialz.desc": "KingGnu - SPECIALZ",
+  "item.backrooms.music_disc_meet_again.desc": "Ratte49 - We'll meet again",
+  "item.backrooms.music_disc_rick.desc": "Gustav - Richards Rolle",
 
   "entity.backrooms.deer": "Hirsch",
 
