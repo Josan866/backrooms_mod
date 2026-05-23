@@ -63,6 +63,46 @@
       }
     ]
   },
+  "loose_cannon": {
+    "sounds": [
+      {
+        "name": "backrooms:loose_cannon",
+        "stream": true
+      }
+    ]
+  },
+  "bernadette": {
+    "sounds": [
+      {
+        "name": "backrooms:bernadette",
+        "stream": true
+      }
+    ]
+  },
+  "places_i_would_go": {
+    "sounds": [
+      {
+        "name": "backrooms:places_i_would_go",
+        "stream": true
+      }
+    ]
+  },
+  "the_world": {
+    "sounds": [
+      {
+        "name": "backrooms:the_world",
+        "stream": true
+      }
+    ]
+  },
+  "my_way": {
+    "sounds": [
+      {
+        "name": "backrooms:my_way",
+        "stream": true
+      }
+    ]
+  },
   "rick": {
     "sounds": [
       {

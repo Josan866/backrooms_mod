@@ -1,0 +1,8 @@
+{
+  "comparator_output": 2,
+  "description": {
+    "translate": "item.backrooms.music_disc_places_i_would_go.desc"
+  },
+  "length_in_seconds": 130.0,
+  "sound_event": "backrooms:places_i_would_go"
+}

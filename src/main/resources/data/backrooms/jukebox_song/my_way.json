@@ -1,0 +1,8 @@
+{
+  "comparator_output": 8,
+  "description": {
+    "translate": "item.backrooms.music_disc_my_way.desc"
+  },
+  "length_in_seconds": 276.0,
+  "sound_event": "backrooms:my_way"
+}

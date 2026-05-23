@@ -1,0 +1,8 @@
+{
+  "comparator_output": 4,
+  "description": {
+    "translate": "item.backrooms.music_disc_loose_cannon.desc"
+  },
+  "length_in_seconds": 177.0,
+  "sound_event": "backrooms:loose_cannon"
+}

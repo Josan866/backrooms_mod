@@ -1,0 +1,8 @@
+{
+  "comparator_output": 7,
+  "description": {
+    "translate": "item.backrooms.music_disc_bernadette.desc"
+  },
+  "length_in_seconds": 322.0,
+  "sound_event": "backrooms:bernadette"
+}
