@@ -37,6 +37,11 @@ public class ModItemGroups {
                         entries.add(ModItems.MUSIC_DISC_AIZO);
                         entries.add(ModItems.MUSIC_DISC_SPEC);
                         entries.add(ModItems.MUSIC_DISC_MEET_AGAIN);
+                        entries.add(ModItems.MUSIC_DISC_LOOSE_CANNON);
+                        entries.add(ModItems.MUSIC_DISC_BERNADETTE);
+                        entries.add(ModItems.MUSIC_DISC_PIWGO);
+                        entries.add(ModItems.MUSIC_DISC_THE_WORLD);
+                        entries.add(ModItems.MUSIC_DISC_MY_WAY);
                         entries.add(ModItems.MUSIC_DISC_RICK);
                     }).build());
 
