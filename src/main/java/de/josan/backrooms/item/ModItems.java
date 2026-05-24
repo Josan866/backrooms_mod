@@ -2,13 +2,9 @@ package de.josan.backrooms.item;
 
 import de.josan.backrooms.Backrooms;
 import de.josan.backrooms.entity.ModEntities;
-import de.josan.backrooms.item.custom.Advancement;
-import de.josan.backrooms.item.custom.AlmondWater;
-import de.josan.backrooms.item.custom.Deer_Spawn_Egg_Item;
-import de.josan.backrooms.item.custom.Spawn_relocate;
+import de.josan.backrooms.item.custom.*;
 import de.josan.backrooms.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
@@ -21,6 +17,7 @@ public class ModItems {
     //Items
     public static final Item BACKROOMS_ICON = registerItem("backrooms_icon", new Item(new Item.Settings()));
     public static final Item ALMOND_WATER = registerItem("almond_water", new AlmondWater(new Item.Settings().maxCount(1)));
+    public static final Item MOTH_JELLY = registerItem("moth_jelly", new MothJelly(new Item.Settings().maxCount(3)));
     public static final Item SPAWNRELOCATE = registerItem("spawn_relocate", new Spawn_relocate(new Item.Settings().recipeRemainder(Items.NETHER_STAR).maxCount(49)));
     public static final Item DEER_SPAWN_EGG = registerItem("deer_spawn_egg", new Deer_Spawn_Egg_Item(ModEntities.DEER, new Item.Settings()));
 

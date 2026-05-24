@@ -25,6 +25,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BACKROOMS_DOOR);
 
                         entries.add(ModItems.ALMOND_WATER);
+                        entries.add(ModItems.MOTH_JELLY);
                         entries.add(ModItems.DEER_SPAWN_EGG);
 
                         entries.add(ModItems.SPAWNRELOCATE);
