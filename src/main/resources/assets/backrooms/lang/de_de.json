@@ -9,6 +9,9 @@
   "commands.access_denied": "Du hast nicht genug Rechte um den Command zu verwenden",
   "commands.troll": "A,a,Aa ... Du hast das Zauberwort nicht gesagt",
   "commands.player": "Spieler online: %1$s",
+  "commands.failed": "Etwas ist schiefgelaufen",
+  "commands.exit_backrooms_denied": "Du denkst du bist klever? Neee.",
+  "commands.backrooms_test": "Speed: %s",
 
   "block.backrooms.abyss_black": "Schwarzes Abyss",
   "block.backrooms.abyss_white": "Weißes Abyss",
@@ -19,6 +22,7 @@
   "item.backrooms.backrooms_icon": "Backrooms",
   "item.backrooms.almond_water": "Mandel Wasser",
   "item.backrooms.moth_jelly": "Motten Jelly",
+  "item.backrooms.shadow_stance": "Schatten Stand",
   "item.backrooms.deer_spawn_egg": "Hirsch-Spawn-Ei",
   "item.backrooms.spawn_relocate": "Spawn Relocater",
 
@@ -52,9 +56,14 @@
   "item.backrooms.music_disc_my_way.desc": "Frank Sinatra - My Way",
   "item.backrooms.music_disc_rick.desc": "Gustav - Richards Rolle",
 
+  "enchantment.backrooms.bloodloss": "Blutverlust",
+  "enchantment.backrooms.yeet": "Yeet",
+
   "entity.backrooms.deer": "Hirsch",
 
   "effect.backrooms.sanity": "Verstand",
+  "effect.backrooms.bloodloss": "Blutverlust",
+  "effect.backrooms.shadow_stance": "Schatten Stand",
   "effect.backrooms.slimey": "Schleimig",
   "effect.backrooms.sunshy": "Sun Shy"
 }

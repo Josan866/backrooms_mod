@@ -5,7 +5,6 @@ import de.josan.backrooms.effect.ModEffects;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -18,6 +17,8 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
+import java.util.Objects;
+
 public class AlmondWater extends Item {
 
     public AlmondWater(Item.Settings settings) {
@@ -28,12 +29,14 @@ public class AlmondWater extends Item {
 
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
+        if (!user.isPlayer()) { return stack; }
         if (user instanceof ServerPlayerEntity serverPlayerEntity) {
             Criteria.CONSUME_ITEM.trigger(serverPlayerEntity, stack);
             serverPlayerEntity.incrementStat(Stats.USED.getOrCreateStat(this));
         }
 
         if (!world.isClient) {
+            //int duration = Objects.requireNonNull(user.getStatusEffect(ModEffects.SANITY)).getDuration();
             user.clearStatusEffects();
             user.addStatusEffect(new StatusEffectInstance(ModEffects.SANITY, 36000, 0, true, false, true));
         }

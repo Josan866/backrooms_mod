@@ -103,6 +103,22 @@
       }
     ]
   },
+  "bloodloss": {
+    "sounds": [
+      {
+        "name": "backrooms:bloodloss",
+        "stream": true
+      }
+    ]
+  },
+  "shadow_stance": {
+    "sounds": [
+      {
+        "name": "backrooms:shadow_stance",
+        "stream": true
+      }
+    ]
+  },
   "rick": {
     "sounds": [
       {

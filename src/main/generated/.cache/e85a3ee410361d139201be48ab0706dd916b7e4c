@@ -1,4 +1,4 @@
-// 1.21.1	2026-05-24T09:20:50.6259067	Backrooms/Model Definitions
+// 1.21.1	2026-05-28T23:12:24.4482135	Backrooms/Model Definitions
 b4c51e63690cea364e14b185114311d1cf77e626 assets\backrooms\models\item\music_disc_one_day_some_day.json
 a235f6bd47c1ee14afb3b71799d2b295b22130d9 assets\backrooms\models\item\music_disc_my_way.json
 1c32e3ee5e2bfb923f225f08756cdb0788de4902 assets\backrooms\blockstates\wall.json
@@ -38,6 +38,7 @@ fef943491a37ab720c073918957c5e4b649de11a assets\backrooms\models\item\abyss_whit
 8d83ce74d05ed6450cb6256a0a13d6e577b91f02 assets\backrooms\models\item\music_disc_bubble_pop_electric.json
 69409ac5544b0d0d1f6d834ce7b74e748b1e98cc assets\backrooms\models\block\backrooms_door_locked_bottom_left.json
 39f4b6d3de1d5346f301e94da784936b7d4027fb assets\backrooms\models\block\wall.json
+ec34288ec8d37cac415d87ed0a6a12c268e871fe assets\backrooms\models\item\shadow_stance.json
 3035f571a3a04ed49e4192fbbfc6faa1138e0eb5 assets\backrooms\models\item\music_disc_aizo.json
 66078ac54b466aa79cabce317362f8c5279099e0 assets\backrooms\models\item\music_disc_judas.json
 6dd61897fd1d868cf7fb40dc619c5a25d550e09f assets\backrooms\models\item\advancement_07.json
@@ -47,8 +48,8 @@ fef943491a37ab720c073918957c5e4b649de11a assets\backrooms\models\item\abyss_whit
 55c41f75d6524979e9440a34db8ca127ff489468 assets\backrooms\models\block\backrooms_door_locked_top_right.json
 fe0feb490d05e24cb58afcdfd6528df6b825efd3 assets\backrooms\models\block\backrooms_door_bottom_right_open.json
 a69055eafbe3fb7c98c2a4effffb9ab12e718925 assets\backrooms\models\block\backrooms_door_top_left.json
-13d9df7ff6b0f8fa5102c771c57b8927940f5d53 assets\backrooms\models\item\music_disc_specialz.json
 2e6ed5f5954c10d49f5c079324d2ca7fdc21995e assets\backrooms\models\block\backrooms_door_bottom_left_open.json
+13d9df7ff6b0f8fa5102c771c57b8927940f5d53 assets\backrooms\models\item\music_disc_specialz.json
 479dc6caa5cebbbf423c083b40af7424dc46ea33 assets\backrooms\models\item\music_disc_places_i_would_go.json
 e379e5667f03f9517612a71562835a9064e87349 assets\backrooms\models\block\backrooms_door_bottom_left.json
 f4769ac54b94d9d05681a2e2a76dd0453916247c assets\backrooms\models\item\advancement_02.json

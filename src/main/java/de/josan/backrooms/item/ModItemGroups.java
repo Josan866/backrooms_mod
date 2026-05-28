@@ -26,6 +26,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.ALMOND_WATER);
                         entries.add(ModItems.MOTH_JELLY);
+                        entries.add(ModItems.SHADOW_STANCE);
                         entries.add(ModItems.DEER_SPAWN_EGG);
 
                         entries.add(ModItems.SPAWNRELOCATE);

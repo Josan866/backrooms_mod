@@ -22,6 +22,7 @@
   "item.backrooms.backrooms_icon": "Backrooms",
   "item.backrooms.almond_water": "Almond Water",
   "item.backrooms.moth_jelly": "Moth Jelly",
+  "item.backrooms.shadow_stance": "Shadow Stance",
   "item.backrooms.deer_spawn_egg": "Deer Spawn Egg",
   "item.backrooms.spawn_relocate": "Spawn Relocater",
 
@@ -55,9 +56,14 @@
   "item.backrooms.music_disc_my_way.desc": "Frank Sinatra - My Way",
   "item.backrooms.music_disc_rick.desc": "Gustav - Richard Rolle",
 
+  "enchantment.backrooms.bloodloss": "Bloodloss",
+  "enchantment.backrooms.yeet": "Yeet",
+
   "entity.backrooms.deer": "Deer",
 
   "effect.backrooms.sanity": "Sanity",
+  "effect.backrooms.bloodloss": "Bloodloss",
+  "effect.backrooms.shadow_stance": "Shadow Stance",
   "effect.backrooms.slimey": "Slimey",
   "effect.backrooms.sunshy": "Sun Shy"
 }

@@ -2,6 +2,7 @@ package de.josan.backrooms;
 
 import de.josan.backrooms.command.BackroomsCommand;
 import de.josan.backrooms.command.SpeedCommand;
+import de.josan.backrooms.enchantment.ModEnchantmentEffects;
 import de.josan.backrooms.sound.ModSounds;
 import de.josan.backrooms.block.ModBlocks;
 import de.josan.backrooms.effect.ModEffects;
@@ -69,6 +70,9 @@ public class Backrooms implements ModInitializer {
 
         //Sounds
         ModSounds.registerSounds();
+
+        //EnchantmentEffects
+        ModEnchantmentEffects.registerModEnchantmentEffects();
 
         //Commands
         CommandRegistrationCallback.EVENT.register(((dispatcher, registryAccess, environment) -> {

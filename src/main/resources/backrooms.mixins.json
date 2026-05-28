@@ -3,7 +3,9 @@
 	"package": "de.josan.backrooms.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+        "ArmorFeatureRendererMixin",
+        "PlayerEntityRendererMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

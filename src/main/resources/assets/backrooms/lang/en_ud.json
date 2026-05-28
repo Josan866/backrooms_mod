@@ -9,6 +9,9 @@
   "commands.access_denied": "puɐɯɯoϽ ʇɐɥʇ ǝsn oʇ suoᴉssᴉɯɹǝd ɥᵷnouǝ ǝʌɐɥ ʇ,uop no⅄",
   "commands.troll": "ʇᵷɐsǝᵷ ʇɥɔᴉu ʇɹoʍɹǝqnɐZ sɐp ʇsɐɥ nᗡ ... ɐⱯʻɐʻⱯ",
   "commands.player": "%1$s :ǝuᴉꞁuo sɹǝʎɐꞁԀ",
+  "commands.failed": "Something went wrong",
+  "commands.exit_backrooms_denied": "You think you're clever? Access denied.",
+  "commands.backrooms_test": "Speed: %s",
 
   "block.backrooms.abyss_black": "ssʎqⱯ ʞɔɐꞁᗺ",
   "block.backrooms.abyss_white": "ssʎqⱯ ǝʇᴉɥM",
@@ -19,6 +22,7 @@
   "item.backrooms.backrooms_icon": "sɯooɹʞɔɐᗺ",
   "item.backrooms.almond_water": "ɹǝʇɐM puoɯꞁⱯ",
   "item.backrooms.moth_jelly": "Moth Jelly",
+  "item.backrooms.shadow_stance": "Shadow Stance",
   "item.backrooms.deer_spawn_egg": "ᵷᵷƎ uʍɐdS ɹǝǝᗡ",
   "item.backrooms.spawn_relocate": "ɹǝʇɐɔoꞁǝᴚ uʍɐdS",
 
@@ -52,9 +56,14 @@
   "item.backrooms.music_disc_my_way.desc": "Frank Sinatra - My Way",
   "item.backrooms.music_disc_rick.desc": "Gustav - Richard Rolle",
 
+  "enchantment.backrooms.bloodloss": "Bloodloss",
+  "enchantment.backrooms.yeet": "Yeet",
+
   "entity.backrooms.deer": "ɹǝǝᗡ",
 
   "effect.backrooms.sanity": "ʎʇᴉuɐS",
+  "effect.backrooms.bloodloss": "Bloodloss",
+  "effect.backrooms.shadow_stance": "Shadow Stance",
   "effect.backrooms.slimey": "ʎǝɯᴉꞁS",
   "effect.backrooms.sunshy": "ʎɥS unS"
 }

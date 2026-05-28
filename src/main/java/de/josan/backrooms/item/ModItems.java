@@ -18,8 +18,9 @@ public class ModItems {
     public static final Item BACKROOMS_ICON = registerItem("backrooms_icon", new Item(new Item.Settings()));
     public static final Item ALMOND_WATER = registerItem("almond_water", new AlmondWater(new Item.Settings().maxCount(1)));
     public static final Item MOTH_JELLY = registerItem("moth_jelly", new MothJelly(new Item.Settings().maxCount(3)));
-    public static final Item SPAWNRELOCATE = registerItem("spawn_relocate", new Spawn_relocate(new Item.Settings().recipeRemainder(Items.NETHER_STAR).maxCount(49)));
+    public static final Item SHADOW_STANCE = registerItem("shadow_stance", new Shadow_Stance(new Item.Settings().maxCount(1)));
     public static final Item DEER_SPAWN_EGG = registerItem("deer_spawn_egg", new Deer_Spawn_Egg_Item(ModEntities.DEER, new Item.Settings()));
+    public static final Item SPAWNRELOCATE = registerItem("spawn_relocate", new Spawn_relocate(new Item.Settings().recipeRemainder(Items.NETHER_STAR).maxCount(49)));
 
     public static final Item MUSIC_DISC_ONE_DAY = registerItem("music_disc_one_day_some_day", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModSounds.ONEDAY_KEY)));
     public static final Item MUSIC_DISC_JANE = registerItem("music_disc_jane", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModSounds.JANE_KEY)));
