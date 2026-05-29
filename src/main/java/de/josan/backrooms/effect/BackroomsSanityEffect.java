@@ -21,7 +21,6 @@ public class BackroomsSanityEffect extends StatusEffect {
             if (current_dec >= 200) {
                 entity.setAttached(MothJelly.MOTHJELLY_DECREASE, 0);
                 entity.setAttached(MothJelly.MOTHJELLY_OVERDOSE, (current_over - 1));
-                entity.sendMessage(Text.literal("Diedanisd"));
             }
         }
         return super.applyUpdateEffect(entity, amplifier);

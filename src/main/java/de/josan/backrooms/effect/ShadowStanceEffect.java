@@ -39,6 +39,7 @@ public class ShadowStanceEffect extends StatusEffect {
     }
 
     private static void spawnParticle(World world, BlockPos pos) {
+        if (world.isClient) { return; }
         Random random = world.getRandom();
         SimpleParticleType simpleParticleType = ParticleTypes.SMOKE;
         if (world.getServer().getWorld(world.getRegistryKey()) == null) {

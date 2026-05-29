@@ -11,6 +11,7 @@ import net.minecraft.enchantment.effect.EnchantmentEntityEffect;
 import net.minecraft.entity.Entity;
 
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.util.math.Vec3d;
 
 import static java.lang.Math.round;
@@ -30,7 +31,7 @@ public record BloodlossEnchantmentEffect() implements EnchantmentEntityEffect {
     @Override
     public void apply(ServerWorld world, int level, EnchantmentEffectContext context, Entity user, Vec3d pos) {
         int current = user.getAttachedOrCreate(BLOODLOSS_ATTACK);
-        if (current < (7 - level)) {
+        if (current < (14 - level)) {
             user.setAttached(BLOODLOSS_ATTACK, (current + 1));
             return;
         }
@@ -39,7 +40,7 @@ public record BloodlossEnchantmentEffect() implements EnchantmentEntityEffect {
             user.damage(user.getDamageSources().magic(), 999999999);
         } else {
             user.damage(user.getDamageSources().magic(), Math.round(level / 2.0f));
-            user.playSound(ModSounds.BLOODLOSS, 1, 1);
+            world.playSound(null, user.getBlockPos(), ModSounds.BLOODLOSS, SoundCategory.MASTER);
         }
     }
 

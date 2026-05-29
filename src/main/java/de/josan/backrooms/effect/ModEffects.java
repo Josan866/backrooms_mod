@@ -36,6 +36,12 @@ public class ModEffects {
                             Identifier.of(Backrooms.MOD_ID, "shadow_stance"), +20.0f,
                             EntityAttributeModifier.Operation.ADD_VALUE));
 
+    public static final RegistryEntry<StatusEffect> FLY = registerStatusEffect("fly",
+            new FlyEffect(StatusEffectCategory.BENEFICIAL, 0xffffff)
+                    .addAttributeModifier(EntityAttributes.GENERIC_FLYING_SPEED,
+                            Identifier.of(Backrooms.MOD_ID, "fly"), -0.3f,
+                            EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+
     public static final RegistryEntry<StatusEffect> SUNSHY = registerStatusEffect("sunshy",
             new SunShyEffect(StatusEffectCategory.HARMFUL, 0x000000)
                     .addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH,

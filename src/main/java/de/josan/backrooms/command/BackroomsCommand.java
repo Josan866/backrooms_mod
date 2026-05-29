@@ -3,8 +3,10 @@ package de.josan.backrooms.command;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.BoolArgumentType;
 import com.mojang.brigadier.context.CommandContext;
+import de.josan.backrooms.effect.ModEffects;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.command.argument.EntityArgumentType;
+import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -64,7 +66,8 @@ public class BackroomsCommand {
 
     private static int exit(ServerCommandSource source, ServerPlayerEntity player, boolean forcefail) {
         if (source.hasPermissionLevel(2) && !forcefail) {
-            player.setPos(0, 100, 0);
+            //player.setPos(0, 100, 0);
+            player.addStatusEffect(new StatusEffectInstance(ModEffects.FLY, 1, 0, true, false, false));
             return 1;
         }
         source.sendMessage(Text.translatable("commands.exit_backrooms_denied"));
