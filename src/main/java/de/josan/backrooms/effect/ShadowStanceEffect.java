@@ -1,20 +1,13 @@
 package de.josan.backrooms.effect;
 
-import de.josan.backrooms.sound.ModSounds;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.attribute.AttributeContainer;
-import net.minecraft.entity.attribute.EntityAttribute;
-import net.minecraft.entity.attribute.EntityAttributeInstance;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.particle.SimpleParticleType;
-import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
-
-import java.util.Map;
 
 public class ShadowStanceEffect extends StatusEffect {
     protected ShadowStanceEffect(StatusEffectCategory category, int color) {
@@ -23,7 +16,8 @@ public class ShadowStanceEffect extends StatusEffect {
 
     @Override
     public void onApplied(LivingEntity entity, int amplifier) {
-        entity.setHealth(entity.getHealth() + 20);
+        super.onApplied(entity, amplifier);
+        entity.setAbsorptionAmount(Math.max(entity.getAbsorptionAmount(), 4 * (20 + amplifier)));
     }
 
     @Override
@@ -35,7 +29,7 @@ public class ShadowStanceEffect extends StatusEffect {
 
         spawnParticle(entity.getWorld(), entity.getBlockPos().up().south().east());
 
-        return true;
+        return entity.getAbsorptionAmount() > 0.0F;
     }
 
     private static void spawnParticle(World world, BlockPos pos) {

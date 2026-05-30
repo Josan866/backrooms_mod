@@ -5,7 +5,9 @@
 	"mixins": [
 		"ExampleMixin",
         "ArmorFeatureRendererMixin",
-        "PlayerEntityRendererMixin"
+        "PlayerEntityRendererMixin",
+        "LivingEntityEquipmentMixin",
+        "LivingEntityInvisibleMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

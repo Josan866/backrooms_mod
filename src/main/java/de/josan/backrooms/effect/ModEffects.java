@@ -27,19 +27,19 @@ public class ModEffects {
     public static final RegistryEntry<StatusEffect> SHADOW_STANCE = registerStatusEffect("shadow_stance",
             new ShadowStanceEffect(StatusEffectCategory.NEUTRAL, 0x000000)
                     .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED,
-                            Identifier.of(Backrooms.MOD_ID, "shadow_stance"), +5.5f,
+                            Backrooms.id("shadow_stance"), +5.5f,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
                     .addAttributeModifier(EntityAttributes.GENERIC_ATTACK_DAMAGE,
-                            Identifier.of(Backrooms.MOD_ID, "shadow_stance"), -4.0f,
+                            Backrooms.id("shadow_stance"), -4.0f,
                             EntityAttributeModifier.Operation.ADD_VALUE)
-                    .addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH,
-                            Identifier.of(Backrooms.MOD_ID, "shadow_stance"), +20.0f,
+                    .addAttributeModifier(EntityAttributes.GENERIC_MAX_ABSORPTION,
+                            Backrooms.id("shadow_stance"), +80.0f,
                             EntityAttributeModifier.Operation.ADD_VALUE));
 
     public static final RegistryEntry<StatusEffect> FLY = registerStatusEffect("fly",
             new FlyEffect(StatusEffectCategory.BENEFICIAL, 0xffffff)
                     .addAttributeModifier(EntityAttributes.GENERIC_FLYING_SPEED,
-                            Identifier.of(Backrooms.MOD_ID, "fly"), -0.3f,
+                            Backrooms.id("fly"), -6.6f,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static final RegistryEntry<StatusEffect> SUNSHY = registerStatusEffect("sunshy",

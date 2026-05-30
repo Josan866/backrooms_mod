@@ -61,6 +61,16 @@
 
   "entity.backrooms.deer": "Hirsch",
 
+  "item.minecraft.potion.effect.slimey_potion": "Trank des Schleimes",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Wurftrank des Schleimes",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Verweiltrank des Schleimes",
+  "item.minecraft.tipped_arrow.effect.slimey_potion": "Pfeil des Schleimes",
+
+  "item.minecraft.potion.effect.sanity_potion": "Trank des Verstands",
+  "item.minecraft.splash_potion.effect.sanity_potion": "Wurftrank des Verstands",
+  "item.minecraft.lingering_potion.effect.sanity_potion": "Verweiltrank des Verstands",
+  "item.minecraft.tipped_arrow.effect.sanity_potion": "Pfeil des Verstands",
+
   "effect.backrooms.sanity": "Verstand",
   "effect.backrooms.bloodloss": "Blutverlust",
   "effect.backrooms.shadow_stance": "Schatten Stand",

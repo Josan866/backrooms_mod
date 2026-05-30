@@ -61,6 +61,16 @@
 
   "entity.backrooms.deer": "Deer",
 
+  "item.minecraft.potion.effect.slimey_potion": "Potion of Slime",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Splash Potion of Slime",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Lingering Potion of Slime",
+  "item.minecraft.tipped_arrow.effect.slimey_potion": "Arrow of Slime",
+
+  "item.minecraft.potion.effect.sanity_potion": "Potion of Sanity",
+  "item.minecraft.splash_potion.effect.sanity_potion": "Splash Potion of Sanity",
+  "item.minecraft.lingering_potion.effect.sanity_potion": "Lingering Potion of Sanity",
+  "item.minecraft.tipped_arrow.effect.sanity_potion": "Arrow of Sanity",
+
   "effect.backrooms.sanity": "Sanity",
   "effect.backrooms.bloodloss": "Bloodloss",
   "effect.backrooms.shadow_stance": "Shadow Stance",

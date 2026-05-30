@@ -3,6 +3,7 @@ package de.josan.backrooms;
 import de.josan.backrooms.command.BackroomsCommand;
 import de.josan.backrooms.command.SpeedCommand;
 import de.josan.backrooms.enchantment.ModEnchantmentEffects;
+import de.josan.backrooms.potion.ModPotions;
 import de.josan.backrooms.sound.ModSounds;
 import de.josan.backrooms.block.ModBlocks;
 import de.josan.backrooms.effect.ModEffects;
@@ -14,8 +15,12 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
+import net.minecraft.potion.Potions;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
@@ -73,6 +78,15 @@ public class Backrooms implements ModInitializer {
 
         //EnchantmentEffects
         ModEnchantmentEffects.registerModEnchantmentEffects();
+
+        //Potions
+        ModPotions.registerModPotions();
+
+        //Potion_recipe
+        FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
+            builder.registerPotionRecipe(Potions.AWKWARD, Items.SLIME_BALL, ModPotions.SLIMEY_POTION);
+            builder.registerPotionRecipe(Potions.WATER, ModItems.MOTH_JELLY, ModPotions.SANITY_POTION);
+        });
 
         //Commands
         CommandRegistrationCallback.EVENT.register(((dispatcher, registryAccess, environment) -> {

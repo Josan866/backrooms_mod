@@ -4,7 +4,6 @@ import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.BoolArgumentType;
 import com.mojang.brigadier.context.CommandContext;
 import de.josan.backrooms.effect.ModEffects;
-import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.command.argument.EntityArgumentType;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.server.command.CommandManager;
@@ -13,11 +12,10 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 
 import java.util.Collection;
-import java.util.Objects;
 
 public class BackroomsCommand {
     public static void register(CommandDispatcher<ServerCommandSource> dispatcher) {
-        dispatcher.register(CommandManager.literal("backrooms")
+        dispatcher.register(CommandManager.literal("backroom")
                 .then(CommandManager.literal("enter")
                         .requires(source -> source.hasPermissionLevel(2))
                                 .then(CommandManager.argument("players", EntityArgumentType.players())
@@ -67,7 +65,7 @@ public class BackroomsCommand {
     private static int exit(ServerCommandSource source, ServerPlayerEntity player, boolean forcefail) {
         if (source.hasPermissionLevel(2) && !forcefail) {
             //player.setPos(0, 100, 0);
-            player.addStatusEffect(new StatusEffectInstance(ModEffects.FLY, 1, 0, true, false, false));
+            player.addStatusEffect(new StatusEffectInstance(ModEffects.FLY, -1, 0, true, false, false));
             return 1;
         }
         source.sendMessage(Text.translatable("commands.exit_backrooms_denied"));
