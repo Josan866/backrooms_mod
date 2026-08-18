@@ -27,12 +27,16 @@ public class ShadowStanceEffect extends StatusEffect {
             return true;
         }
 
-        spawnParticle(entity.getWorld(), entity.getBlockPos().up().south().east());
+        if (entity.horizontalSpeed > 0) {
+            spawnParticle(entity.getWorld(), entity.getBlockPos().up().south().east(), 20);
+        } else {
+            spawnParticle(entity.getWorld(), entity.getBlockPos().up().south().east(), 300);
+        }
 
         return entity.getAbsorptionAmount() > 0.0F;
     }
 
-    private static void spawnParticle(World world, BlockPos pos) {
+    private static void spawnParticle(World world, BlockPos pos, int number) {
         if (world.isClient) { return; }
         Random random = world.getRandom();
         SimpleParticleType simpleParticleType = ParticleTypes.SMOKE;
@@ -53,7 +57,7 @@ public class ShadowStanceEffect extends StatusEffect {
                     pos.getX(),
                     pos.getY(),
                     pos.getZ(),
-                    300,
+                    number,
                     0.5,
                     1.0,
                     0.5,

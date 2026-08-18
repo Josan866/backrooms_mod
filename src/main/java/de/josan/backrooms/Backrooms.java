@@ -18,7 +18,6 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potions;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -52,7 +51,7 @@ public class Backrooms implements ModInitializer {
         return false;
     }
 
-    public static int speed = 0;
+    public static float speed_shadow = 5.5f;
 
 	@Override
 	public void onInitialize() {

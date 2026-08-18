@@ -27,7 +27,7 @@ public class ModEffects {
     public static final RegistryEntry<StatusEffect> SHADOW_STANCE = registerStatusEffect("shadow_stance",
             new ShadowStanceEffect(StatusEffectCategory.NEUTRAL, 0x000000)
                     .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED,
-                            Backrooms.id("shadow_stance"), +5.5f,
+                            Backrooms.id("shadow_stance"), +Backrooms.speed_shadow,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
                     .addAttributeModifier(EntityAttributes.GENERIC_ATTACK_DAMAGE,
                             Backrooms.id("shadow_stance"), -4.0f,

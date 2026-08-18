@@ -40,8 +40,9 @@ public record BloodlossEnchantmentEffect() implements EnchantmentEntityEffect {
             user.damage(user.getDamageSources().magic(), 999999999);
         } else {
             user.damage(user.getDamageSources().magic(), Math.round(level / 2.0f));
-            world.playSound(null, user.getBlockPos(), ModSounds.BLOODLOSS, SoundCategory.MASTER);
         }
+        world.playSound(null, user.getBlockPos(), ModSounds.BLOODLOSS, SoundCategory.MASTER);
+        //user.networkHandler.sendPacket((Packet<?>)constructor.apply(Texts.parse(user, "title", user, 0)));
     }
 
     @Override

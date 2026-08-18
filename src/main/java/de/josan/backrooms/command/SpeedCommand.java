@@ -14,23 +14,20 @@ public class SpeedCommand {
     public static void register(CommandDispatcher<ServerCommandSource> dispatcher) {
         dispatcher.register(CommandManager.literal("speed").requires(source -> source.hasPermissionLevel(2))
                 .then(CommandManager.literal("set")
-                        .then(CommandManager.argument("speed", IntegerArgumentType.integer(0))
+                        .then(CommandManager.argument("speed", IntegerArgumentType.integer())
                                 .executes(context -> setSpeed(context.getSource(), IntegerArgumentType.getInteger(context, "speed")))))
                 .then(CommandManager.literal("get")
                         .executes(context -> getSpeed(context.getSource()))));
     }
 
     private static int setSpeed(ServerCommandSource source, int speed) {
-        if (speed >= 0) {
-            Backrooms.speed = speed;
-        } else {
-            source.sendMessage(Text.literal("Not a valid speed"));
-        }
+        Backrooms.speed_shadow = speed;
+        source.sendMessage(Text.literal("Changed Speed to " + speed));
         return 1;
     }
 
     private static int getSpeed(ServerCommandSource source) {
-        source.sendMessage(Text.literal("Speed: " + Backrooms.speed));
+        source.sendMessage(Text.literal("Speed: " + Backrooms.speed_shadow));
         return 1;
     }
 }
