@@ -23,6 +23,13 @@ public class ModSounds {
     public static final SoundEvent PIWGO = registerSoundEvent("places_i_would_go");
     public static final SoundEvent THE_WORLD = registerSoundEvent("the_world");
     public static final SoundEvent MY_WAY = registerSoundEvent("my_way");
+    public static final SoundEvent SUNSHINE = registerSoundEvent("sunshine");
+    public static final SoundEvent SEA = registerSoundEvent("sea");
+    public static final SoundEvent ORDER = registerSoundEvent("order");
+    public static final SoundEvent ROSSO = registerSoundEvent("rosso");
+    public static final SoundEvent WILLI = registerSoundEvent("willi");
+    public static final SoundEvent LIFE = registerSoundEvent("life");
+    public static final SoundEvent BUMMS = registerSoundEvent("bumms");
     public static final SoundEvent BLOODLOSS = registerSoundEvent("bloodloss");
     public static final SoundEvent SHADOW_STANCE = registerSoundEvent("shadow_stance");
     public static final SoundEvent RICK = registerSoundEvent("rick");
@@ -40,6 +47,13 @@ public class ModSounds {
     public static final RegistryKey<JukeboxSong> PIWGO_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("places_i_would_go"));
     public static final RegistryKey<JukeboxSong> THE_WORLD_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("the_world"));
     public static final RegistryKey<JukeboxSong> MY_WAY_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("my_way"));
+    public static final RegistryKey<JukeboxSong> SUNSHINE_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("sunshine"));
+    public static final RegistryKey<JukeboxSong> SEA_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("sea"));
+    public static final RegistryKey<JukeboxSong> ORDER_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("order"));
+    public static final RegistryKey<JukeboxSong> ROSSO_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("rosso"));
+    public static final RegistryKey<JukeboxSong> WILLI_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("willi"));
+    public static final RegistryKey<JukeboxSong> LIFE_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("life"));
+    public static final RegistryKey<JukeboxSong> BUMMS_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("bumms"));
     public static final RegistryKey<JukeboxSong> BLOODLOSS_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("bloodloss"));
     public static final RegistryKey<JukeboxSong> SHADOW_STANCE_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("shadow_stance"));
     public static final RegistryKey<JukeboxSong> RICK_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("rick"));

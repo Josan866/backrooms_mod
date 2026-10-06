@@ -1,0 +1,8 @@
+{
+  "comparator_output": 9,
+  "description": {
+    "translate": "item.backrooms.music_disc_sunshine.desc"
+  },
+  "length_in_seconds": 201.0,
+  "sound_event": "backrooms:sunshine"
+}

@@ -45,6 +45,13 @@ public class ModModelGen extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MUSIC_DISC_PIWGO, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUSIC_DISC_THE_WORLD, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUSIC_DISC_MY_WAY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MUSIC_DISC_SUNSHINE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MUSIC_DISC_SEA, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MUSIC_DISC_ORDER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MUSIC_DISC_ROSSO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MUSIC_DISC_WILLI, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MUSIC_DISC_LIFE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MUSIC_DISC_BUMMS, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUSIC_DISC_RICK, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.ADVANCEMENT_01, Models.GENERATED);

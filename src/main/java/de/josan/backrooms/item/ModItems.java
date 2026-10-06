@@ -35,6 +35,13 @@ public class ModItems {
     public static final Item MUSIC_DISC_PIWGO = registerItem("music_disc_places_i_would_go", new Item(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).jukeboxPlayable(ModSounds.PIWGO_KEY)));
     public static final Item MUSIC_DISC_THE_WORLD = registerItem("music_disc_the_world", new Item(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).jukeboxPlayable(ModSounds.THE_WORLD_KEY)));
     public static final Item MUSIC_DISC_MY_WAY = registerItem("music_disc_my_way", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModSounds.MY_WAY_KEY)));
+    public static final Item MUSIC_DISC_SUNSHINE = registerItem("music_disc_sunshine", new Item(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).jukeboxPlayable(ModSounds.SUNSHINE_KEY)));
+    public static final Item MUSIC_DISC_SEA = registerItem("music_disc_sea", new Item(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).jukeboxPlayable(ModSounds.SEA_KEY)));
+    public static final Item MUSIC_DISC_ORDER = registerItem("music_disc_order", new Item(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).jukeboxPlayable(ModSounds.ORDER_KEY)));
+    public static final Item MUSIC_DISC_ROSSO = registerItem("music_disc_rosso", new Item(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).jukeboxPlayable(ModSounds.ROSSO_KEY)));
+    public static final Item MUSIC_DISC_WILLI = registerItem("music_disc_willi", new Item(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).jukeboxPlayable(ModSounds.WILLI_KEY)));
+    public static final Item MUSIC_DISC_LIFE = registerItem("music_disc_life", new Item(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).jukeboxPlayable(ModSounds.LIFE_KEY)));
+    public static final Item MUSIC_DISC_BUMMS = registerItem("music_disc_bumms", new Item(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).jukeboxPlayable(ModSounds.BUMMS_KEY)));
     public static final Item MUSIC_DISC_RICK = registerItem("music_disc_rick", new Item(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).jukeboxPlayable(ModSounds.RICK_KEY)));
 
     public static final Item ADVANCEMENT_01 = registerItem("advancement_01", new Item(new Item.Settings()));
@@ -74,6 +81,13 @@ public class ModItems {
             entries.add(MUSIC_DISC_PIWGO);
             entries.add(MUSIC_DISC_THE_WORLD);
             entries.add(MUSIC_DISC_MY_WAY);
+            entries.add(MUSIC_DISC_SUNSHINE);
+            entries.add(MUSIC_DISC_SEA);
+            entries.add(MUSIC_DISC_ORDER);
+            entries.add(MUSIC_DISC_ROSSO);
+            entries.add(MUSIC_DISC_WILLI);
+            entries.add(MUSIC_DISC_LIFE);
+            entries.add(MUSIC_DISC_BUMMS);
             entries.add(MUSIC_DISC_RICK);
         });
     }

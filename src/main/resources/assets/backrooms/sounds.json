@@ -103,6 +103,62 @@
       }
     ]
   },
+  "sunshine": {
+    "sounds": [
+      {
+        "name": "backrooms:sunshine",
+        "stream": true
+      }
+    ]
+  },
+  "sea": {
+    "sounds": [
+      {
+        "name": "backrooms:sea",
+        "stream": true
+      }
+    ]
+  },
+  "order": {
+    "sounds": [
+      {
+        "name": "backrooms:order",
+        "stream": true
+      }
+    ]
+  },
+  "rosso": {
+    "sounds": [
+      {
+        "name": "backrooms:rosso",
+        "stream": true
+      }
+    ]
+  },
+  "willi": {
+    "sounds": [
+      {
+        "name": "backrooms:willi",
+        "stream": true
+      }
+    ]
+  },
+  "life": {
+    "sounds": [
+      {
+        "name": "backrooms:life",
+        "stream": true
+      }
+    ]
+  },
+  "bumms": {
+    "sounds": [
+      {
+        "name": "backrooms:bumms",
+        "stream": true
+      }
+    ]
+  },
   "bloodloss": {
     "sounds": [
       {

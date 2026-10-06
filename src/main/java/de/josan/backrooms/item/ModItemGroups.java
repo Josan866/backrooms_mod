@@ -44,6 +44,13 @@ public class ModItemGroups {
                         entries.add(ModItems.MUSIC_DISC_PIWGO);
                         entries.add(ModItems.MUSIC_DISC_THE_WORLD);
                         entries.add(ModItems.MUSIC_DISC_MY_WAY);
+                        entries.add(ModItems.MUSIC_DISC_SUNSHINE);
+                        entries.add(ModItems.MUSIC_DISC_SEA);
+                        entries.add(ModItems.MUSIC_DISC_ORDER);
+                        entries.add(ModItems.MUSIC_DISC_ROSSO);
+                        entries.add(ModItems.MUSIC_DISC_WILLI);
+                        entries.add(ModItems.MUSIC_DISC_LIFE);
+                        entries.add(ModItems.MUSIC_DISC_BUMMS);
                         entries.add(ModItems.MUSIC_DISC_RICK);
                     }).build());
 

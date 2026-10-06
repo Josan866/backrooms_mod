@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.backrooms.music_disc_life.desc"
+  },
+  "length_in_seconds": 187.0,
+  "sound_event": "backrooms:life"
+}
