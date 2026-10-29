@@ -1,9 +1,11 @@
 package de.josan.backrooms;
 
+import de.josan.backrooms.block.entity.ModBlockEntities;
 import de.josan.backrooms.command.BackroomsCommand;
 import de.josan.backrooms.command.SpeedCommand;
 import de.josan.backrooms.enchantment.ModEnchantmentEffects;
 import de.josan.backrooms.potion.ModPotions;
+import de.josan.backrooms.screen.ModScreenHandlers;
 import de.josan.backrooms.sound.ModSounds;
 import de.josan.backrooms.block.ModBlocks;
 import de.josan.backrooms.effect.ModEffects;
@@ -77,6 +79,10 @@ public class Backrooms implements ModInitializer {
 
         //EnchantmentEffects
         ModEnchantmentEffects.registerModEnchantmentEffects();
+
+        //BlockEntities
+        ModBlockEntities.registerBlockEntities();
+        ModScreenHandlers.registerScreenHandlers();
 
         //Potions
         ModPotions.registerModPotions();

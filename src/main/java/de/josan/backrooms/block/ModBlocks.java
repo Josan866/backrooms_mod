@@ -1,6 +1,7 @@
 package de.josan.backrooms.block;
 
 import de.josan.backrooms.Backrooms;
+import de.josan.backrooms.block.custom.PedestalBlock;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
@@ -38,6 +39,9 @@ public class ModBlocks {
             new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(3f).requiresTool().nonOpaque()));
     public static final Block BACKROOMS_DOOR = registerBlock("backrooms_door",
             new DoorBlock(BlockSetType.STONE, AbstractBlock.Settings.create().strength(3f).requiresTool().nonOpaque()));
+
+    public static final Block PEDESTAL = registerBlock("pedestal",
+            new PedestalBlock(AbstractBlock.Settings.create().nonOpaque()));
 
     //Register Block
     private static Block registerBlock(String name, Block block) {

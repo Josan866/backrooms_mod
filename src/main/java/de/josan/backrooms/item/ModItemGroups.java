@@ -52,6 +52,8 @@ public class ModItemGroups {
                         entries.add(ModItems.MUSIC_DISC_LIFE);
                         entries.add(ModItems.MUSIC_DISC_BUMMS);
                         entries.add(ModItems.MUSIC_DISC_RICK);
+
+                        entries.add(ModBlocks.PEDESTAL);
                     }).build());
 
     //register
