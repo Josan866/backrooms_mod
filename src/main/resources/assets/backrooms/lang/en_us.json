@@ -2,6 +2,11 @@
   "function.access_denied": "You don't have enough permissions to use that",
   "function.indevelopment": "In Development",
 
+  "ransom.deny.place": "§4[RANS0ME] Nuh uh",
+  "ransom.deny.drop": "§4[RANS0ME] NONONO",
+  "ransom.deny.quickmove": "§4[RANS0ME] FUCK YOU",
+  "ransom.info.leave": "§4[RANS0M] YOU LEFT THE GAME! YOUR ITEMS ARE GONE.",
+
   "itemgroup.backrooms": "Backrooms",
 
   "commands.early_access": "Only for EarlyAccess members",
@@ -12,6 +17,14 @@
   "commands.failed": "Something went wrong",
   "commands.exit_backrooms_denied": "You think you're clever? Access denied.",
   "commands.backrooms_test": "Speed: %s",
+  "commands.ransom.ransom.start.success": "Started Ransom",
+  "commands.ransom.ransom.start.failed": "Ransom is already running",
+  "commands.ransom.ransom.stop.success": "Stoped Ransom",
+  "commands.ransom.ransom.stop.failed": "Ransom is already stopped",
+  "commands.ransom.ransom.get": "Ransom State: %s",
+  "commands.ransom.player.add": "Added Ransom to %s Player(s)",
+  "commands.ransom.player.remove": "Removed Ransom from %s Player(s)",
+  "commands.ransom.player.list": "Players with Ransom: %s",
 
   "block.backrooms.abyss_black": "Black Abyss",
   "block.backrooms.abyss_white": "White Abyss",
