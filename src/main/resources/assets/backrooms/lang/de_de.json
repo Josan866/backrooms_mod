@@ -2,6 +2,11 @@
   "function.access_denied": "Du hast nicht genug Rechte um das zu verwenden",
   "function.indevelopment": "Im Development",
 
+  "ransom.deny.place": "§4[RANS0ME] Nuh uh",
+  "ransom.deny.drop": "§4[RANS0ME] NONONO",
+  "ransom.deny.quickmove": "§4[RANS0ME] FUCK YOU",
+  "ransom.info.leave": "§4[RANS0M] YOU LEFT THE GAME! YOUR ITEMS ARE GONE.",
+
   "itemgroup.backrooms": "Backrooms",
 
   "commands.early_access": "Nur für EarlyAccess Mitglieder",
@@ -12,6 +17,14 @@
   "commands.failed": "Etwas ist schiefgelaufen",
   "commands.exit_backrooms_denied": "Du denkst du bist klever? Neee.",
   "commands.backrooms_test": "Speed: %s",
+  "commands.ransom.ransom.start.success": "Started Ransom",
+  "commands.ransom.ransom.start.failed": "Ransom is already running",
+  "commands.ransom.ransom.stop.success": "Stoped Ransom",
+  "commands.ransom.ransom.stop.failed": "Ransom is already stopped",
+  "commands.ransom.ransom.get": "Ransom State: %s",
+  "commands.ransom.player.add": "Added Ransom to %s Player(s)",
+  "commands.ransom.player.remove": "Removed Ransom from %s Player(s)",
+  "commands.ransom.player.list": "Players with Ransom: %s",
 
   "block.backrooms.abyss_black": "Schwarzes Abyss",
   "block.backrooms.abyss_white": "Weißes Abyss",
@@ -23,9 +36,16 @@
   "item.backrooms.backrooms_icon": "Backrooms",
   "item.backrooms.almond_water": "Mandel Wasser",
   "item.backrooms.moth_jelly": "Motten Jelly",
+  "item.backrooms.shimmer": "Die Sonne scheint mir aus dem Arsch",
   "item.backrooms.shadow_stance": "Schatten Stand",
   "item.backrooms.deer_spawn_egg": "Hirsch-Spawn-Ei",
   "item.backrooms.spawn_relocate": "Spawn Relocater",
+
+  "item.backrooms.blasphemous_blade": "Blasen Schwert",
+
+  "item.backrooms.cursed_sword": "Cubanische Brechstange",
+  "item.backrooms.great_sword": "Fast so groß wie meiner",
+  "item.backrooms.executioner_sword": "Great Sword",
 
   "item.backrooms.music_disc_one_day_some_day": "Schallplatte",
   "item.backrooms.music_disc_jane": "Schallplatte",
@@ -91,5 +111,6 @@
   "effect.backrooms.shadow_stance": "Schatten Stand",
   "effect.backrooms.fly": "Fly",
   "effect.backrooms.slimey": "Schleimig",
-  "effect.backrooms.sunshy": "Sun Shy"
+  "effect.backrooms.sunshy": "Sonnen Shein",
+  "effect.backrooms.shimmer": "Arschloch-Helligkeit"
 }

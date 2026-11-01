@@ -89,6 +89,15 @@ public class MothJelly extends Item {
         if (current >= 3) {
             user.damage(user.getDamageSources().magic(), 100.0F);
         }
+
+        /*while (user.getAttachedOrCreate(MOTHJELLY_OVERDOSE) > 0) {
+            int decval = user.getAttachedOrCreate(MOTHJELLY_OVERDOSE);
+            user.setAttached(MOTHJELLY_DECREASE, (decval + 1));
+            if(decval > 60) {
+                user.setAttached(MOTHJELLY_OVERDOSE, (user.getAttachedOrCreate(MOTHJELLY_OVERDOSE) - 1));
+                user.setAttached(MOTHJELLY_DECREASE, 0);
+            }
+        }*/
     }
 
     @Override

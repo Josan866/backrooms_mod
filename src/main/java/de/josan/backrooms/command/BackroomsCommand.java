@@ -43,9 +43,6 @@ public class BackroomsCommand {
     }
 
     private static int enterOverworld(ServerCommandSource source, Collection<ServerPlayerEntity> players) {
-        for (ServerPlayerEntity player : players) {
-            player.setPos(0, 1000, 0);
-        }
         source.sendMessage(Text.literal("Success"));
         return 1;
     }

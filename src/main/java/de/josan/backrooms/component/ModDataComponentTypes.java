@@ -1,3 +1,4 @@
+
 package de.josan.backrooms.component;
 
 import com.mojang.serialization.Codec;
@@ -13,9 +14,20 @@ public class ModDataComponentTypes {
     public static final ComponentType<Integer> MOTHJELLY_OVERDOSE =
             register("moth_jelly_overdose", builder -> builder.codec(Codec.INT));
 
-    private static <T>ComponentType<T> register(String name, UnaryOperator<ComponentType.Builder<T>> builderOperator) {
-        return Registry.register(Registries.DATA_COMPONENT_TYPE, Backrooms.id(name),
-                builderOperator.apply(ComponentType.builder()).build());
+    public static final ComponentType<Integer> GLINT_TYPE =
+            register("glint_type", builder -> builder
+                    .codec(Codec.INT)
+                    .packetCodec(net.minecraft.network.codec.PacketCodecs.VAR_INT));
+
+    private static <T> ComponentType<T> register(
+            String name,
+            UnaryOperator<ComponentType.Builder<T>> builderOperator
+    ) {
+        return Registry.register(
+                Registries.DATA_COMPONENT_TYPE,
+                Backrooms.id(name),
+                builderOperator.apply(ComponentType.builder()).build()
+        );
     }
 
     public static void registerDataComponentTypes() {

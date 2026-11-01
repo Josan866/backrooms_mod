@@ -28,9 +28,13 @@ public class ModModelGen extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BACKROOMS_ICON, Models.GENERATED);
         itemModelGenerator.register(ModItems.ALMOND_WATER, Models.GENERATED);
         itemModelGenerator.register(ModItems.MOTH_JELLY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SHIMMER, Models.GENERATED);
         itemModelGenerator.register(ModItems.SHADOW_STANCE, Models.GENERATED);
         itemModelGenerator.register(ModItems.DEER_SPAWN_EGG, Models.GENERATED);
         itemModelGenerator.register(ModItems.SPAWNRELOCATE, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.CURSED_SWORD, Models.HANDHELD);
+        //itemModelGenerator.register(ModItems.GREAT_SWORD, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.MUSIC_DISC_ONE_DAY, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUSIC_DISC_JANE, Models.GENERATED);

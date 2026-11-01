@@ -15,13 +15,13 @@ public class ModEffects {
     public static final RegistryEntry<StatusEffect> SANITY = registerStatusEffect("sanity",
             new BackroomsSanityEffect(StatusEffectCategory.NEUTRAL, 0xffffff)
                     .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED,
-                            Identifier.of(Backrooms.MOD_ID, "sanity"), +0.15f,
+                            Backrooms.id("sanity"), +0.15f,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static final RegistryEntry<StatusEffect> BLOODLOSS = registerStatusEffect("bloodloss",
             new BloodlossEffect(StatusEffectCategory.HARMFUL, 0xff0000)
                     .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED,
-                            Identifier.of(Backrooms.MOD_ID, "bloodloss"), -0.25f,
+                            Backrooms.id("bloodloss"), -0.25f,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static final RegistryEntry<StatusEffect> SHADOW_STANCE = registerStatusEffect("shadow_stance",
@@ -45,14 +45,29 @@ public class ModEffects {
     public static final RegistryEntry<StatusEffect> SUNSHY = registerStatusEffect("sunshy",
             new SunShyEffect(StatusEffectCategory.HARMFUL, 0x000000)
                     .addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH,
-                            Identifier.of(Backrooms.MOD_ID, "sunshy"), +0.5f,
+                            Backrooms.id("sunshy"), +0.5f,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static final RegistryEntry<StatusEffect> SLIMEY = registerStatusEffect("slimey",
             new SlimeyEffect(StatusEffectCategory.NEUTRAL, 0x00ff00)
                     .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED,
-                            Identifier.of(Backrooms.MOD_ID, "slimey"), -0.25f,
+                            Backrooms.id("slimey"), -0.25f,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+
+    public static final RegistryEntry<StatusEffect> SHIMMER = registerStatusEffect("shimmer",
+            new ShimmerEffect(StatusEffectCategory.NEUTRAL, 0xaa00ff)
+                    .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED,
+                            Backrooms.id("shimmer"), +0.4f,
+                            EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
+                    .addAttributeModifier(EntityAttributes.GENERIC_ATTACK_DAMAGE,
+                            Backrooms.id("shimmer"), +6.0f,
+                            EntityAttributeModifier.Operation.ADD_VALUE)
+                    .addAttributeModifier(EntityAttributes.GENERIC_ARMOR,
+                            Backrooms.id("shimmer"), +0.4f,
+                            EntityAttributeModifier.Operation.ADD_VALUE)
+                    .addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH,
+                            Backrooms.id("shimmer"), +32.0f,
+                            EntityAttributeModifier.Operation.ADD_VALUE));
 
     //RegisterEffect
     private static RegistryEntry<StatusEffect> registerStatusEffect(String name, StatusEffect statusEffect) {

@@ -8,9 +8,15 @@
         "PlayerEntityRendererMixin",
         "LivingEntityEquipmentMixin",
         "LivingEntityInvisibleMixin",
+        "BufferBuilderStorageMixin",
         "HandledScreenMixin",
-        "InGameHudMixin"
+        "InGameHudMixin",
+        "ItemStackMixin"
 	],
+    "client": [
+        "client.ClientPlayerEntityMixin",
+        "client.ItemRendererMixin"
+    ],
 	"injectors": {
 		"defaultRequire": 1
 	},

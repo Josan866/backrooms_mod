@@ -24,8 +24,15 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BACKROOMS_DOOR_LOCKED);
                         entries.add(ModBlocks.BACKROOMS_DOOR);
 
+                        entries.add(ModItems.BLASPHEMOUS_BLADE);
+
+                        entries.add(ModItems.CURSED_SWORD);
+                        entries.add(ModItems.GREAT_SWORD);
+                        entries.add(ModItems.EXECUTIONER_SWORD);
+
                         entries.add(ModItems.ALMOND_WATER);
                         entries.add(ModItems.MOTH_JELLY);
+                        entries.add(ModItems.SHIMMER);
                         entries.add(ModItems.SHADOW_STANCE);
                         entries.add(ModItems.DEER_SPAWN_EGG);
 
@@ -52,8 +59,6 @@ public class ModItemGroups {
                         entries.add(ModItems.MUSIC_DISC_LIFE);
                         entries.add(ModItems.MUSIC_DISC_BUMMS);
                         entries.add(ModItems.MUSIC_DISC_RICK);
-
-                        entries.add(ModBlocks.PEDESTAL);
                     }).build());
 
     //register

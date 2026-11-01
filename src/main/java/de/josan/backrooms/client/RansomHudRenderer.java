@@ -87,7 +87,7 @@ public class RansomHudRenderer {
             int x = centerX - (boxWidth / 2);
             int y = centerY - (boxHeight / 2);
 
-            drawRoundedRect(context, x, y, x + boxWidth, y + boxHeight, 2, 0xDD330000);
+            drawRoundedRect(context, x, y, boxWidth, boxHeight, 2, 0xDD330000);
             context.fill(x + 1, y + 1, x + boxWidth - 1, y + boxHeight - 1, 0xF50A0000);
 
             context.drawCenteredTextWithShadow(textRenderer, "⚠ ERROR ⚠", centerX, y + 6, 0xFFFF3333);
@@ -111,7 +111,7 @@ public class RansomHudRenderer {
             context.getMatrices().translate(0, 0, 301); // Drückt das X vor das Item
 
             // Markanter Rahmen für das Hauptfenster
-            drawRoundedRect(context, mainX, mainY, mainX + mainWidth, mainY + mainHeight, 4, 0x44000000); // Schwarzer Außenrand
+            drawRoundedRect(context, mainX, mainY, mainWidth, mainHeight, 4, 0x44000000); // Schwarzer Außenrand
             context.fill(mainX + 2, mainY + 12, mainX + mainWidth - 2, mainY + mainHeight - 2, 0xFFFF0000); // Dunkelrot innen
 
             // GOLD
@@ -140,7 +140,7 @@ public class RansomHudRenderer {
             context.drawCenteredTextWithShadow(textRenderer, "UNRECOVERABLE BY ANY MEANS", 0, 20, 0xFFAA0000);
             context.getMatrices().pop();
             context.drawText(textRenderer, "TIME:          " + countdownSeconds, mainX + mainWidth / 2 - 10, mainY + mainHeight - 15, 0xFF000000, false);
-            context.drawTextWithShadow(textRenderer, "GOLD: " + (500 - currentGold), mainX + 7, mainY + mainHeight - 15, 0xFFFFCC00);
+            context.drawTextWithShadow(textRenderer, "GOLD: " + (50 - currentGold), mainX + 7, mainY + mainHeight - 15, 0xFFFFCC00);
 
             context.getMatrices().pop();
         }

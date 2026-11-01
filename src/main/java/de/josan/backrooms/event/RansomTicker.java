@@ -3,6 +3,7 @@ package de.josan.backrooms.event;
 import de.josan.backrooms.Backrooms;
 import de.josan.backrooms.command.RansomCommand;
 import de.josan.backrooms.network.RansomPopupPayload;
+import de.josan.backrooms.sound.ModSounds;
 import de.josan.backrooms.util.RansomData;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -15,6 +16,8 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 
 import java.util.*;
+
+import static java.lang.Thread.sleep;
 
 public class RansomTicker {
     public static final Random RANDOM = new Random();
@@ -45,15 +48,16 @@ public class RansomTicker {
                 ServerPlayerEntity player = server.getPlayerManager().getPlayer(targetUuid);
 
                 if (player != null) {
-                    RansomCommand.activeAttackers.put(targetUuid, new RansomData(
-                            player.getPos(), player.getYaw(), player.getPitch()
-                    ));
                     attackDuration = 100; // 5 Sekunden Stillstehen am Anfang
 
+                    //player.getWorld().playSound(null, player.getBlockPos(), ModSounds.RANSOM_STOP, SoundCategory.MASTER);
                     player.addStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 100, 0, false, false));
                     player.getWorld().playSound(null, player.getX(), player.getY(), player.getZ(),
                             SoundEvents.ENTITY_WITHER_SPAWN, SoundCategory.PLAYERS, 1.0f, 0.5f);
                     sendTitle(player, "§4RANSOM", "§cDON'T MOVE! DON'T TURN!");
+                    RansomCommand.activeAttackers.put(targetUuid, new RansomData(
+                            player.getPos(), player.getYaw(), player.getPitch()
+                    ));
                 }
                 randomCooldown = 300 + RANDOM.nextInt(600);
             }
@@ -80,7 +84,7 @@ public class RansomTicker {
 
                     // 1. Gold-Prüfung: Hat der Spieler 500 Goldbarren?
                     int goldCount = player.getInventory().count(net.minecraft.item.Items.GOLD_INGOT);
-                    if (goldCount >= 500) {
+                    if (goldCount >= 50) {
                         // Erfolgreich freigekauft! 500 Gold abziehen
                         player.getInventory().remove(stack -> stack.isOf(net.minecraft.item.Items.GOLD_INGOT), 500, player.getInventory());
 
@@ -163,7 +167,7 @@ public class RansomTicker {
                     boolean movedYaw = Math.abs(player.getYaw() - data.yaw) > 1.0f;
                     boolean movedPitch = Math.abs(player.getPitch() - data.pitch) > 1.0f;
 
-                    if (movedPos || movedYaw || movedPitch) {
+                    if ((movedPos || movedYaw || movedPitch) && attackDuration < 80) {
                         // ERWISCHT! Wechsel in den Erpresser-Modus (1 Min Countdown startet)
                         data.inDemandMode = true;
 
@@ -184,18 +188,25 @@ public class RansomTicker {
                         }
                         // (Bisherige Effekte wie Sound und Slowness beibehalten...)
 
-                        player.getWorld().playSound(null, player.getX(), player.getY(), player.getZ(),
-                                SoundEvents.ENTITY_ENDER_DRAGON_GROWL, SoundCategory.PLAYERS, 1.5f, 0.8f);
+                        //player.getWorld().playSound(player, player.getX(), player.getY(), player.getZ(),
+                        //        ModSounds.RANSOM_START, SoundCategory.MASTER, 1.0f, 1.0f);
+                        player.getWorld().playSound(player, player.getX(), player.getY(), player.getZ(),
+                                ModSounds.RANSOM, SoundCategory.MASTER, 1.0f, 1.0f);
 
                         // Verlangsamung und Blindheit, um das Suchen nach Gold zu erschweren
                         player.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 1200, 1, false, false));
                         player.addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 60, 0, false, false));
                     }
+                    else if (attackDuration == 80)
+                    {
+                        RansomCommand.activeAttackers.remove(uuid);
+                        RansomCommand.activeAttackers.put(uuid,
+                                new RansomData(player.getPos(), player.getYaw(), player.getPitch())
+                        );
+                    }
                     // Erfolgreich stillgehalten (5 Sekunden vorbei)
-                    else if (attackDuration <= 0) {
-                        sendTitle(player, "§aSAFE", "§7Du hast stillgehalten.");
-                        player.getWorld().playSound(null, player.getX(), player.getY(), player.getZ(),
-                                SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 1.0f, 1.0f);
+                    if (attackDuration <= 0) {
+                        sendTitle(player, "§aSAFE", "§7For Now.");
                         toRemove.add(uuid);
                     }
                 }

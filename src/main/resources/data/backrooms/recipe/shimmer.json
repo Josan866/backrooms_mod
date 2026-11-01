@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraft:allium"
+    },
+    "w": {
+      "item": "minecraft:potion"
+    },
+    "n": {
+      "item": "minecraft:nether_star"
+    },
+    "m": {
+      "item": "backrooms:moth_jelly"
+    }
+  },
+  "pattern": [
+    "awa",
+    "ana",
+    "ama"
+  ],
+  "result": {
+    "count": 1,
+    "id": "backrooms:shimmer"
+  }
+}

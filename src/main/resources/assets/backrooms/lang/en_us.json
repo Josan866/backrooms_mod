@@ -36,9 +36,16 @@
   "item.backrooms.backrooms_icon": "Backrooms",
   "item.backrooms.almond_water": "Almond Water",
   "item.backrooms.moth_jelly": "Moth Jelly",
+  "item.backrooms.shimmer": "Shimmer",
   "item.backrooms.shadow_stance": "Shadow Stance",
   "item.backrooms.deer_spawn_egg": "Deer Spawn Egg",
   "item.backrooms.spawn_relocate": "Spawn Relocater",
+
+  "item.backrooms.blasphemous_blade": "Blasphemous Blade",
+
+  "item.backrooms.cursed_sword": "Cursed Sword",
+  "item.backrooms.great_sword": "Great Sword",
+  "item.backrooms.executioner_sword": "Executioners Sword",
 
   "item.backrooms.music_disc_one_day_some_day": "Music Disc",
   "item.backrooms.music_disc_jane": "Music Disc",
@@ -104,5 +111,6 @@
   "effect.backrooms.shadow_stance": "Shadow Stance",
   "effect.backrooms.fly": "Fly",
   "effect.backrooms.slimey": "Slimey",
-  "effect.backrooms.sunshy": "Sun Shy"
+  "effect.backrooms.sunshy": "Sun Shy",
+  "effect.backrooms.shimmer": "Shimmer"
 }
