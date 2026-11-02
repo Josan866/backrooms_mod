@@ -159,6 +159,14 @@
       }
     ]
   },
+  "jackpot": {
+    "sounds": [
+      {
+        "name": "backrooms:jackpot",
+        "stream": true
+      }
+    ]
+  },
   "bloodloss": {
     "sounds": [
       {
@@ -179,6 +187,22 @@
     "sounds": [
       {
         "name": "backrooms:rick",
+        "stream": true
+      }
+    ]
+  },
+  "ransom": {
+    "sounds": [
+      {
+        "name": "backrooms:ransom",
+        "stream": true
+      }
+    ]
+  },
+  "ransom_spawn": {
+    "sounds": [
+      {
+        "name": "backrooms:ransom_spawn",
         "stream": true
       }
     ]

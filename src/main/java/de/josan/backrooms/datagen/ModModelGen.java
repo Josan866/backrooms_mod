@@ -34,7 +34,6 @@ public class ModModelGen extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SPAWNRELOCATE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.CURSED_SWORD, Models.HANDHELD);
-        //itemModelGenerator.register(ModItems.GREAT_SWORD, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.MUSIC_DISC_ONE_DAY, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUSIC_DISC_JANE, Models.GENERATED);
@@ -56,6 +55,7 @@ public class ModModelGen extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MUSIC_DISC_WILLI, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUSIC_DISC_LIFE, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUSIC_DISC_BUMMS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MUSIC_DISC_JACKPOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUSIC_DISC_RICK, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.ADVANCEMENT_01, Models.GENERATED);

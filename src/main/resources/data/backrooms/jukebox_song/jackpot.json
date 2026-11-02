@@ -1,0 +1,8 @@
+{
+  "comparator_output": 7,
+  "description": {
+    "translate": "item.backrooms.music_disc_jackpot.desc"
+  },
+  "length_in_seconds": 250.0,
+  "sound_event": "backrooms:jackpot"
+}

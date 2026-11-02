@@ -30,9 +30,11 @@ public class ModSounds {
     public static final SoundEvent WILLI = registerSoundEvent("willi");
     public static final SoundEvent LIFE = registerSoundEvent("life");
     public static final SoundEvent BUMMS = registerSoundEvent("bumms");
+    public static final SoundEvent JACKPOT = registerSoundEvent("jackpot");
     public static final SoundEvent BLOODLOSS = registerSoundEvent("bloodloss");
     public static final SoundEvent SHADOW_STANCE = registerSoundEvent("shadow_stance");
     public static final SoundEvent RICK = registerSoundEvent("rick");
+    public static final SoundEvent RANSOM = registerSoundEvent("ransom");
 
     public static final RegistryKey<JukeboxSong> ONEDAY_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("one_day_some_day"));
     public static final RegistryKey<JukeboxSong> JANE_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("jane"));
@@ -54,6 +56,7 @@ public class ModSounds {
     public static final RegistryKey<JukeboxSong> WILLI_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("willi"));
     public static final RegistryKey<JukeboxSong> LIFE_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("life"));
     public static final RegistryKey<JukeboxSong> BUMMS_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("bumms"));
+    public static final RegistryKey<JukeboxSong> JACKPOT_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("jackpot"));
     public static final RegistryKey<JukeboxSong> BLOODLOSS_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("bloodloss"));
     public static final RegistryKey<JukeboxSong> SHADOW_STANCE_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("shadow_stance"));
     public static final RegistryKey<JukeboxSong> RICK_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("rick"));

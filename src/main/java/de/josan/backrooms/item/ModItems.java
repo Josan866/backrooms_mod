@@ -48,6 +48,7 @@ public class ModItems {
     public static final Item MUSIC_DISC_WILLI = registerItem("music_disc_willi", new Item(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).jukeboxPlayable(ModSounds.WILLI_KEY)));
     public static final Item MUSIC_DISC_LIFE = registerItem("music_disc_life", new Item(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).jukeboxPlayable(ModSounds.LIFE_KEY)));
     public static final Item MUSIC_DISC_BUMMS = registerItem("music_disc_bumms", new Item(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).jukeboxPlayable(ModSounds.BUMMS_KEY)));
+    public static final Item MUSIC_DISC_JACKPOT = registerItem("music_disc_jackpot", new Item(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).jukeboxPlayable(ModSounds.JACKPOT_KEY)));
     public static final Item MUSIC_DISC_RICK = registerItem("music_disc_rick", new Item(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).jukeboxPlayable(ModSounds.RICK_KEY)));
 
     public static final Item ADVANCEMENT_01 = registerItem("advancement_01", new Item(new Item.Settings()));

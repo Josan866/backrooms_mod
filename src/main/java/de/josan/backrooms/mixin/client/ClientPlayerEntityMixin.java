@@ -19,7 +19,7 @@ public class ClientPlayerEntityMixin {
         var shimmerEffectEntry = de.josan.backrooms.effect.ModEffects.SHIMMER;
 
         if (player.hasStatusEffect(shimmerEffectEntry)) {
-            this.nauseaIntensity = 1.0F;
+            this.nauseaIntensity = 0.1F;
         }
     }
 }
