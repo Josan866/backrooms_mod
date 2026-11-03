@@ -6,6 +6,7 @@ import de.josan.backrooms.entity.ModEntities;
 import de.josan.backrooms.item.custom.*;
 import de.josan.backrooms.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.component.DataComponentTypes;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -23,10 +24,10 @@ public class ModItems {
     public static final Item SPAWNRELOCATE = registerItem("spawn_relocate", new Spawn_relocate(new Item.Settings().recipeRemainder(Items.NETHER_STAR).maxCount(49)));
 
     public static final Item BLASPHEMOUS_BLADE = registerItem("blasphemous_blade", new SwordItem(ToolMaterials.DIAMOND, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 7, -0.0F)).fireproof()));
-
     public static final Item CURSED_SWORD = registerItem("cursed_sword", new SwordItem(ToolMaterials.DIAMOND, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 7, -0.0F))));
     public static final Item GREAT_SWORD = registerItem("great_sword", new SwordItem(ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 9, -1.6F)).component(ModDataComponentTypes.GLINT_TYPE, 1).maxDamage(4349).fireproof()));
     public static final Item EXECUTIONER_SWORD = registerItem("executioner_sword", new SwordItem(ToolMaterials.GOLD, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.GOLD, 20, -1.6F)).component(ModDataComponentTypes.GLINT_TYPE, 4).fireproof()));
+    public static final Item MACE = registerItem("mace", new MaceItem(new Item.Settings().rarity(Rarity.EPIC).maxDamage(500).component(DataComponentTypes.TOOL, MaceItem.createToolComponent()).attributeModifiers(MaceItem.createAttributeModifiers())));
 
     public static final Item MUSIC_DISC_ONE_DAY = registerItem("music_disc_one_day_some_day", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModSounds.ONEDAY_KEY)));
     public static final Item MUSIC_DISC_JANE = registerItem("music_disc_jane", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModSounds.JANE_KEY)));

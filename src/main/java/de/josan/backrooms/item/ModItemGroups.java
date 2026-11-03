@@ -25,10 +25,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BACKROOMS_DOOR);
 
                         entries.add(ModItems.BLASPHEMOUS_BLADE);
-
                         entries.add(ModItems.CURSED_SWORD);
                         entries.add(ModItems.GREAT_SWORD);
                         entries.add(ModItems.EXECUTIONER_SWORD);
+                        entries.add(ModItems.MACE);
 
                         entries.add(ModItems.ALMOND_WATER);
                         entries.add(ModItems.MOTH_JELLY);

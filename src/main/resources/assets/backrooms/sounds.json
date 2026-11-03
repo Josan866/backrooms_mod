@@ -183,6 +183,14 @@
       }
     ]
   },
+  "judgement": {
+    "sounds": [
+      {
+        "name": "backrooms:judgement",
+        "stream": true
+      }
+    ]
+  },
   "rick": {
     "sounds": [
       {
