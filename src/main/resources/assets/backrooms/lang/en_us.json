@@ -114,5 +114,8 @@
   "effect.backrooms.fly": "Fly",
   "effect.backrooms.slimey": "Slimey",
   "effect.backrooms.sunshy": "Sun Shy",
-  "effect.backrooms.shimmer": "Shimmer"
+  "effect.backrooms.shimmer": "Shimmer",
+
+  "death.attack.shimmer_curse": "%1$s was consumed by the shimmer",
+  "death.attack.shimmer_curse.player": "%1$s was consumed by the shimmer while fighting %2$s"
 }

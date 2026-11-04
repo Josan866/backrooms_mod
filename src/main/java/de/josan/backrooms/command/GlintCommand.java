@@ -3,6 +3,7 @@ package de.josan.backrooms.command;
 
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.StringArgumentType;
+import de.josan.backrooms.client.render.CustomGlintRenderLayers;
 import de.josan.backrooms.component.ModDataComponentTypes;
 import net.minecraft.command.CommandSource;
 import net.minecraft.item.ItemStack;
@@ -15,11 +16,12 @@ import java.util.Map;
 public class GlintCommand {
 
     private static final Map<String, Integer> GLINTS = Map.of(
-            "red", 1,
-            "green", 2,
-            "pink", 3,
-            "gold", 4,
-            "white", 5
+            "red", CustomGlintRenderLayers.GLINT.RED.ordinal(),
+            "green", CustomGlintRenderLayers.GLINT.GREEN.ordinal(),
+            "pink", CustomGlintRenderLayers.GLINT.PINK.ordinal(),
+            "gold", CustomGlintRenderLayers.GLINT.GOLD.ordinal(),
+            "white", CustomGlintRenderLayers.GLINT.WHITE.ordinal(),
+            "faint_white", CustomGlintRenderLayers.GLINT.FAINT_WHITE.ordinal()
     );
 
     public static void register(CommandDispatcher<ServerCommandSource> dispatcher) {
@@ -31,7 +33,7 @@ public class GlintCommand {
                                 .then(CommandManager.argument("type", StringArgumentType.word())
                                         .suggests((context, builder) ->
                                                 CommandSource.suggestMatching(
-                                                        new String[]{"normal", "red", "green", "pink", "gold", "white"},
+                                                        new String[]{"normal", "red", "green", "pink", "gold", "white", "faint_white"},
                                                         builder
                                                 )
                                         )

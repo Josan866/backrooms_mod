@@ -41,6 +41,14 @@ public final class CustomGlintRenderLayers {
                     Identifier.of("backrooms", "textures/misc/glint/item/white.png")
             );
 
+    public static final RenderLayer FAINT_WHITE_ITEM =
+            BackroomsGlintLayerFactory.createItemLayer(
+                    "backrooms_faint_white_glint",
+                    Identifier.of("backrooms", "textures/misc/glint/item/faint_white.png")
+            );
+
+    //---------------------------------------
+
     public static final RenderLayer RED_ARMOR =
             BackroomsGlintLayerFactory.createArmorLayer(
                     "backrooms_red_armor_glint",
@@ -71,6 +79,12 @@ public final class CustomGlintRenderLayers {
                     Identifier.of("backrooms", "textures/misc/glint/entity/white.png")
             );
 
+    public static final RenderLayer FAINT_WHITE_ARMOR =
+            BackroomsGlintLayerFactory.createArmorLayer(
+                    "backrooms_faint_white_armor_glint",
+                    Identifier.of("backrooms", "textures/misc/glint/entity/faint_white.png")
+            );
+
     private CustomGlintRenderLayers() {
     }
 
@@ -81,11 +95,14 @@ public final class CustomGlintRenderLayers {
                 PINK_ITEM,
                 GOLD_ITEM,
                 WHITE_ITEM,
+                FAINT_WHITE_ITEM,
+
                 RED_ARMOR,
                 GREEN_ARMOR,
                 PINK_ARMOR,
                 GOLD_ARMOR,
-                WHITE_ARMOR
+                WHITE_ARMOR,
+                FAINT_WHITE_ARMOR
         );
     }
 
@@ -96,6 +113,7 @@ public final class CustomGlintRenderLayers {
             case 3 -> PINK_ITEM;
             case 4 -> GOLD_ITEM;
             case 5 -> WHITE_ITEM;
+            case 6 -> FAINT_WHITE_ITEM;
             default -> null;
         };
     }
@@ -107,7 +125,18 @@ public final class CustomGlintRenderLayers {
             case 3 -> PINK_ARMOR;
             case 4 -> GOLD_ARMOR;
             case 5 -> WHITE_ARMOR;
+            case 6 -> FAINT_WHITE_ARMOR;
             default -> null;
         };
+    }
+
+    public enum GLINT {
+        NORMAL,
+        RED,
+        GREEN,
+        PINK,
+        GOLD,
+        WHITE,
+        FAINT_WHITE
     }
 }
