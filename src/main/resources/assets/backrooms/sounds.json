@@ -191,6 +191,14 @@
       }
     ]
   },
+  "milkyway": {
+    "sounds": [
+      {
+        "name": "backrooms:milch_aber_fettarme",
+        "stream": true
+      }
+    ]
+  },
   "rick": {
     "sounds": [
       {

@@ -2,6 +2,7 @@ package de.josan.backrooms;
 
 import de.josan.backrooms.block.entity.ModBlockEntities;
 import de.josan.backrooms.block.entity.renderer.PedestalBlockEntityRenderer;
+import de.josan.backrooms.client.CurseHudRenderer;
 import de.josan.backrooms.client.RansomHudRenderer;
 import de.josan.backrooms.entity.ModEntities;
 import de.josan.backrooms.entity.client.DeerModel;
@@ -26,5 +27,6 @@ public class BackroomsClient implements ClientModInitializer {
         HandledScreens.register(ModScreenHandlers.PEDESTAL_SCREEN_HANDLER, PedestalScreen::new);
 
         RansomHudRenderer.register();
+        CurseHudRenderer.register();
     }
 }

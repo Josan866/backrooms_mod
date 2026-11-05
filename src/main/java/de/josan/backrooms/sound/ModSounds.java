@@ -6,6 +6,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 
@@ -33,6 +34,7 @@ public class ModSounds {
     public static final SoundEvent JACKPOT = registerSoundEvent("jackpot");
     public static final SoundEvent BLOODLOSS = registerSoundEvent("bloodloss");
     public static final SoundEvent SHADOW_STANCE = registerSoundEvent("shadow_stance");
+    public static final SoundEvent MILKYWAY = registerSoundEvent("milkyway");
     public static final SoundEvent RICK = registerSoundEvent("rick");
     public static final SoundEvent RANSOM = registerSoundEvent("ransom");
 
@@ -60,6 +62,24 @@ public class ModSounds {
     public static final RegistryKey<JukeboxSong> BLOODLOSS_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("bloodloss"));
     public static final RegistryKey<JukeboxSong> SHADOW_STANCE_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("shadow_stance"));
     public static final RegistryKey<JukeboxSong> RICK_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("rick"));
+
+    public static final RegistryEntry.Reference<SoundEvent> MILKYWAY_EV = registerReference("milkyway");
+
+    private static RegistryEntry.Reference<SoundEvent> registerReference(String id) {
+        return registerReference(Backrooms.id(id));
+    }
+
+    private static RegistryEntry.Reference<SoundEvent> registerReference(Identifier id) {
+        return registerReference(id, id);
+    }
+
+    private static SoundEvent register(Identifier id, Identifier soundId) {
+        return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(soundId));
+    }
+
+    private static RegistryEntry.Reference<SoundEvent> registerReference(Identifier id, Identifier soundId) {
+        return Registry.registerReference(Registries.SOUND_EVENT, id, SoundEvent.of(soundId));
+    }
 
     private static SoundEvent registerSoundEvent(String name) {
         Identifier id = Backrooms.id(name);

@@ -25,6 +25,11 @@
   "commands.ransom.player.add": "Added Ransom to %s Player(s)",
   "commands.ransom.player.remove": "Removed Ransom from %s Player(s)",
   "commands.ransom.player.list": "Players with Ransom: %s",
+  "commands.curse.fail": "No Player(s) were specified",
+  "commands.curse.fail.argument": "Unknown argument\n%s<--[HERE]",
+  "commands.curse.fail.already": "Player(s) already are in this state",
+  "commands.curse.success": "%2$s Player %3$s %1$s",
+  "commands.curse.success.multiple": "%2$s %4$s Players %3$s %1$s",
 
   "block.backrooms.abyss_black": "ssʎqⱯ ʞɔɐꞁᗺ",
   "block.backrooms.abyss_white": "ssʎqⱯ ǝʇᴉɥM",
@@ -40,6 +45,12 @@
   "item.backrooms.shadow_stance": "Shadow Stance",
   "item.backrooms.deer_spawn_egg": "ᵷᵷƎ uʍɐdS ɹǝǝᗡ",
   "item.backrooms.spawn_relocate": "ɹǝʇɐɔoꞁǝᴚ uʍɐdS",
+  "item.backrooms.hyperion": "Hyperion",
+  "item.backrooms.conjuring": "Conjuring",
+  "item.backrooms.giant_sword": "Giant Sword",
+  "item.backrooms.astraea": "Astraea",
+  "item.backrooms.vorpal_katana": "Vorpal Katana",
+  "item.backrooms.valkyrie": "Valkyrie",
 
   "item.backrooms.blasphemous_blade": "Blasphemous Blade",
   "item.backrooms.cursed_sword": "Cursed Sword",
@@ -114,5 +125,8 @@
   "effect.backrooms.fly": "Fly",
   "effect.backrooms.slimey": "ʎǝɯᴉꞁS",
   "effect.backrooms.sunshy": "ʎɥS unS",
-  "effect.backrooms.shimmer": "Shimmer"
+  "effect.backrooms.shimmer": "Shimmer",
+
+  "death.attack.shimmer_curse": "%1$s was consumed by the shimmer",
+  "death.attack.shimmer_curse.player": "%1$s was consumed by the shimmer while fighting %2$s"
 }

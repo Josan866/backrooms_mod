@@ -2,6 +2,7 @@ package de.josan.backrooms.block;
 
 import de.josan.backrooms.Backrooms;
 import de.josan.backrooms.block.custom.PedestalBlock;
+import de.josan.backrooms.block.custom.WhiteAbyssBlock;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
@@ -13,21 +14,21 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     //Blocks
-    public static final Block BLACK_ABYSS = registerBlock("abyss_black", new Block(AbstractBlock.Settings.create().strength(1000f)
+    public static final Block BLACK_ABYSS = registerBlock("abyss_black", new Block(AbstractBlock.Settings.create()
+            .strength(1000f)
             .requiresTool()
             .pistonBehavior(PistonBehavior.BLOCK)
             .dropsNothing()
             .noBlockBreakParticles()
             .mapColor(MapColor.BLACK)));
 
-    public static final Block WHITE_ABYSS = registerBlock("abyss_white", new Block(AbstractBlock.Settings.create()
+    public static final Block WHITE_ABYSS = registerBlock("abyss_white", new WhiteAbyssBlock(AbstractBlock.Settings.create()
             .strength(1000f)
             .requiresTool()
             .pistonBehavior(PistonBehavior.BLOCK)
             .dropsNothing()
             .luminance(state -> 15)
             .emissiveLighting(Blocks::always)
-            .nonOpaque()
             .noBlockBreakParticles()
             .mapColor(DyeColor.WHITE)));
 
@@ -40,8 +41,8 @@ public class ModBlocks {
     public static final Block BACKROOMS_DOOR = registerBlock("backrooms_door",
             new DoorBlock(BlockSetType.STONE, AbstractBlock.Settings.create().strength(3f).requiresTool().nonOpaque()));
 
-    public static final Block PEDESTAL = registerBlock("pedestal",
-            new PedestalBlock(AbstractBlock.Settings.create().nonOpaque()));
+    public static final Block PEDESTAL = registerBlock("pedestal", new PedestalBlock(AbstractBlock.Settings.create()
+            .nonOpaque()));
 
     //Register Block
     private static Block registerBlock(String name, Block block) {

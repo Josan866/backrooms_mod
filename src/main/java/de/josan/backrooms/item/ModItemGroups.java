@@ -35,8 +35,13 @@ public class ModItemGroups {
                         entries.add(ModItems.SHIMMER);
                         entries.add(ModItems.SHADOW_STANCE);
                         entries.add(ModItems.DEER_SPAWN_EGG);
-
                         entries.add(ModItems.SPAWNRELOCATE);
+                        entries.add(ModItems.HYPERION);
+                        entries.add(ModItems.CONJURING);
+                        entries.add(ModItems.GIANT_SWORD);
+                        entries.add(ModItems.ASTRAEA);
+                        entries.add(ModItems.VORPAL_KATANA);
+                        entries.add(ModItems.VALKYRIE);
 
                         entries.add(ModItems.MUSIC_DISC_ONE_DAY);
                         entries.add(ModItems.MUSIC_DISC_JANE);

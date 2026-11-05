@@ -16,7 +16,7 @@ public class ModModelGen extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLACK_ABYSS);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WHITE_ABYSS);
+        //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WHITE_ABYSS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WALL);
 
         blockStateModelGenerator.registerDoor(ModBlocks.BACKROOMS_DOOR_LOCKED);
@@ -33,6 +33,10 @@ public class ModModelGen extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DEER_SPAWN_EGG, Models.GENERATED);
         itemModelGenerator.register(ModItems.SPAWNRELOCATE, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.HYPERION, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CONJURING, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ASTRAEA, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.VORPAL_KATANA, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CURSED_SWORD, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.MUSIC_DISC_ONE_DAY, Models.GENERATED);

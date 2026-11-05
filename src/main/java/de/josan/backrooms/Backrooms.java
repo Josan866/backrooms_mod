@@ -1,13 +1,12 @@
 package de.josan.backrooms;
 
 import de.josan.backrooms.block.entity.ModBlockEntities;
-import de.josan.backrooms.command.BackroomsCommand;
-import de.josan.backrooms.command.GlintCommand;
-import de.josan.backrooms.command.RansomCommand;
-import de.josan.backrooms.command.SpeedCommand;
+import de.josan.backrooms.command.*;
 import de.josan.backrooms.component.ModDataComponentTypes;
 import de.josan.backrooms.enchantment.ModEnchantmentEffects;
+import de.josan.backrooms.event.CurseTicker;
 import de.josan.backrooms.event.RansomTicker;
+import de.josan.backrooms.network.CursePayload;
 import de.josan.backrooms.network.RansomClosePayload;
 import de.josan.backrooms.network.RansomPopupPayload;
 import de.josan.backrooms.potion.ModPotions;
@@ -103,8 +102,10 @@ public class Backrooms implements ModInitializer {
 
         //Event
         RansomTicker.register();
+        CurseTicker.register();
         PayloadTypeRegistry.playS2C().register(RansomClosePayload.ID, RansomClosePayload.CODEC);
         PayloadTypeRegistry.playS2C().register(RansomPopupPayload.ID, RansomPopupPayload.CODEC);
+        PayloadTypeRegistry.playS2C().register(CursePayload.ID, CursePayload.CODEC);
 
         //Potions
         ModPotions.registerModPotions();
@@ -125,6 +126,7 @@ public class Backrooms implements ModInitializer {
             SpeedCommand.register(dispatcher);
             RansomCommand.register(dispatcher);
             GlintCommand.register(dispatcher);
+            CurseCommand.register(dispatcher);
         }));
 
         // 1. EVENT: Wenn ein Spieler den Server verlässt (Disconnect)

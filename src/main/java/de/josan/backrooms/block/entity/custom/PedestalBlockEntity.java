@@ -78,4 +78,23 @@ public class PedestalBlockEntity extends BlockEntity implements ImplementedInven
     public NbtCompound toInitialChunkDataNbt(RegistryWrapper.WrapperLookup registryLookup) {
         return createNbt(registryLookup);
     }
+
+    @Override
+    public void setStack(int slot, ItemStack stack) {
+        this.inventory.set(slot, stack);
+        markDirty();
+
+        if (world != null && !world.isClient) {
+            world.updateListeners(pos, getCachedState(), getCachedState(), 3);
+        }
+    }
+
+    @Override
+    public void markDirty() {
+        super.markDirty();
+
+        if (world != null && !world.isClient) {
+            world.updateListeners(pos, getCachedState(), getCachedState(), 3);
+        }
+    }
 }

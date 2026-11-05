@@ -2,6 +2,7 @@ package de.josan.backrooms.mixin;
 
 import de.josan.backrooms.effect.ModEffects;
 import de.josan.backrooms.entity.ModDamageTypes;
+import de.josan.backrooms.util.ShimmerCurseAccess;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -19,7 +20,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 @Mixin(LivingEntity.class)
-public abstract class LivingEntityEffectsMixin {
+public abstract class LivingEntityEffectsMixin implements ShimmerCurseAccess {
 
     @Shadow
     @Final
@@ -30,6 +31,16 @@ public abstract class LivingEntityEffectsMixin {
 
     @Unique
     private boolean myMod$shimmerCurse = false;
+
+    @Override
+    public void backrooms$setShimmerCurse(boolean value) {
+        this.myMod$shimmerCurse = value;
+    }
+
+    @Override
+    public boolean backrooms$hasShimmerCurse() {
+        return this.myMod$shimmerCurse;
+    }
 
     @Inject(method = "clearStatusEffects", at = @At("HEAD"), cancellable = true)
     private void myMod$clearStatusEffects(CallbackInfoReturnable<Boolean> cir) {
@@ -75,7 +86,7 @@ public abstract class LivingEntityEffectsMixin {
         LivingEntity self = (LivingEntity)(Object)this;
 
         if (this.myMod$shimmerCurse && !self.getWorld().isClient() && self.isAlive()) {
-            self.damage(self.getDamageSources().create(ModDamageTypes.SHIMMER_CURSE), 1.0F);
+            self.damage(self.getDamageSources().create(ModDamageTypes.SHIMMER_CURSE), 32.0F);
         }
     }
 }
