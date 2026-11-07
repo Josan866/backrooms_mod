@@ -42,6 +42,15 @@ public class ModItemGroups {
                         entries.add(ModItems.ASTRAEA);
                         entries.add(ModItems.VORPAL_KATANA);
                         entries.add(ModItems.VALKYRIE);
+                        entries.add(ModItems.DEATHRIPPER_DAGGER);
+                        entries.add(ModItems.TERMINATOR);
+                        entries.add(ModItems.REVENANT_AXE);
+                        entries.add(ModItems.SCYLLA);
+                        entries.add(ModItems.RUNAAN_BOW);
+                        entries.add(ModItems.MIDAS_STAFF);
+                        entries.add(ModItems.DAEDALUS_AXE);
+                        entries.add(ModItems.AOTV_SWORD);
+                        //entries.add(ModItems.TRIDENT);
 
                         entries.add(ModItems.MUSIC_DISC_ONE_DAY);
                         entries.add(ModItems.MUSIC_DISC_JANE);

@@ -38,6 +38,13 @@ public class ModModelGen extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ASTRAEA, Models.HANDHELD);
         itemModelGenerator.register(ModItems.VORPAL_KATANA, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CURSED_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DEATHRIPPER_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.TERMINATOR, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.REVENANT_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SCYLLA, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.MIDAS_STAFF, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DAEDALUS_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AOTV_SWORD, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.MUSIC_DISC_ONE_DAY, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUSIC_DISC_JANE, Models.GENERATED);
