@@ -49,7 +49,7 @@ public class CurseTicker {
 
                 if (player != null && uuid != null) {
                     Vec3d vec3d = player.getPos();
-                    player.getServer().getPlayerManager().getPlayer(uuid).networkHandler.sendPacket(new PlaySoundS2CPacket(ModSounds.MILKYWAY_EV, SoundCategory.MASTER, vec3d.getX(), vec3d.getY(), vec3d.getZ(), 1, 1, 1));
+                    player.getServer().getPlayerManager().getPlayer(uuid).networkHandler.sendPacket(new PlaySoundS2CPacket(ModSounds.FETTARME_EV, SoundCategory.MASTER, vec3d.getX(), vec3d.getY(), vec3d.getZ(), 1, 1, 1));
                     StatusEffectInstance statusEffectInstance = new StatusEffectInstance(StatusEffects.LEVITATION, 1, 9, false, false);
                     player.addStatusEffect(statusEffectInstance, player);
                 }

@@ -1,0 +1,10 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/bone"
+	},
+	"overrides": [
+		{ "predicate": { "custom_model_data": 666 }, "model": "custom/jsws_mm_katana" },
+		{ "predicate": { "custom_model_data": 67 }, "model": "custom/chain" }
+	]
+}

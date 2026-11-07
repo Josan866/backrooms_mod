@@ -191,14 +191,6 @@
       }
     ]
   },
-  "milkyway": {
-    "sounds": [
-      {
-        "name": "backrooms:milch_aber_fettarme",
-        "stream": true
-      }
-    ]
-  },
   "rick": {
     "sounds": [
       {
@@ -222,5 +214,128 @@
         "stream": true
       }
     ]
+  },
+  "lvl0ambience": {
+    "sounds": [ "backrooms:lvl0ambience" ]
+  },
+  "lvl2ambience": {
+    "sounds": [ "backrooms:lvl2ambience" ]
+  },
+  "tunnel": {
+    "sounds": [ "backrooms:tunnel" ]
+  },
+  "ocean": {
+    "sounds": [ "backrooms:ocean" ]
+  },
+  "hub": {
+    "sounds": [ "backrooms:lvhubambience" ]
+  },
+  "fun": {
+    "sounds": [ "backrooms:lvlfunambience" ]
+  },
+  "poolrooms": {
+    "sounds": [ "backrooms:lvlpoolroomsambience" ]
+  },
+  "field": {
+    "sounds": [ "backrooms:field" ]
+  },
+  "run": {
+    "sounds": [ "backrooms:lvlrunambience" ]
+  },
+  "mall": {
+    "sounds": [ "backrooms:shoppingcenter" ]
+  },
+  "escape": {
+    "sounds": [ "backrooms:escape" ]
+  },
+  "endrod": {
+    "sounds": [ "backrooms:lvlendrod" ]
+  },
+  "mushroom": {
+    "sounds": [ "backrooms:lvlmushroomambience" ]
+  },
+  "lonelyhouse": {
+    "sounds": [ "backrooms:lvllonelyhouseambience" ]
+  },
+  "grassroom": {
+    "sounds": [ "backrooms:grass_rooms" ]
+  },
+  "observer": {
+    "sounds": [ "backrooms:observer" ]
+  },
+  "red_city": {
+    "sounds": [ "backrooms:red_city" ]
+  },
+  "city": {
+    "sounds": [ "backrooms:city" ]
+  },
+  "ratte_lvl": {
+    "sounds": [ "backrooms:ratte_lvl" ]
+  },
+  "neighbor": {
+    "sounds": [ "backrooms:neighbor" ]
+  },
+  "run_for_it": {
+    "sounds": [ "backrooms:runforit" ]
+  },
+  "lvlneighbor": {
+    "sounds": [ "backrooms:neighbor_ambience" ]
+  },
+  "ratte-entrada": {
+    "sounds": [ "backrooms:lvlratte" ]
+  },
+  "fettarme": {
+    "sounds": [ "backrooms:milch_aber_fettarme" ]
+  },
+  "camping": {
+    "sounds": [ "backrooms:camping" ]
+  },
+  "hopekill": {
+    "sounds": [ "backrooms:hope" ]
+  },
+  "lenkill": {
+    "sounds": [ "backrooms:len" ]
+  },
+  "silvrkill": {
+    "sounds": [ "backrooms:silvr" ]
+  },
+  "cursed_neighbourhood": {
+    "sounds": [ "backrooms:cursed_neighbourhood" ]
+  },
+  "23_black_and_white_hallway": {
+    "sounds": [ "backrooms:23_black_and_white_hallway" ]
+  },
+  "elevator": {
+    "sounds": [ "backrooms:elevator" ]
+  },
+  "hotel_hallway_boiled": {
+    "sounds": [ "backrooms:hotel_hallway_boiled" ]
+  },
+  "lvl_mall_2": {
+    "sounds": [ "backrooms:lvl_mall_2" ]
+  },
+  "office_1": {
+    "sounds": [ "backrooms:office_1" ]
+  },
+  "office_2": {
+    "sounds": [ "backrooms:office_2" ]
+  },
+  "hotel_rooms": {
+    "sounds": [ "backrooms:hotel_rooms" ]
+  },
+  "lvl_lie": {
+    "sounds": [ "backrooms:lvl_lie" ]
+  },
+  "lvl_jump_and_run": {
+    "sounds": [ "backrooms:lvl_jump_and_run" ]
+  },
+  "lvl_dance_party": {
+    "sounds": [ "backrooms:lvl_dance_party" ]
+  },
+  "lvl_liminal_house": {
+    "sounds": [ "backrooms:lvl_liminal_house" ]
+  },
+  "poolrooms2": {
+    "sounds": [ "backrooms:poolrooms2" ]
   }
 }

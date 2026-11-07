@@ -34,7 +34,7 @@ public class ModSounds {
     public static final SoundEvent JACKPOT = registerSoundEvent("jackpot");
     public static final SoundEvent BLOODLOSS = registerSoundEvent("bloodloss");
     public static final SoundEvent SHADOW_STANCE = registerSoundEvent("shadow_stance");
-    public static final SoundEvent MILKYWAY = registerSoundEvent("milkyway");
+    public static final SoundEvent FETTARME = registerSoundEvent("milkyway");
     public static final SoundEvent RICK = registerSoundEvent("rick");
     public static final SoundEvent RANSOM = registerSoundEvent("ransom");
 
@@ -63,7 +63,7 @@ public class ModSounds {
     public static final RegistryKey<JukeboxSong> SHADOW_STANCE_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("shadow_stance"));
     public static final RegistryKey<JukeboxSong> RICK_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Backrooms.id("rick"));
 
-    public static final RegistryEntry.Reference<SoundEvent> MILKYWAY_EV = registerReference("milkyway");
+    public static final RegistryEntry.Reference<SoundEvent> FETTARME_EV = registerReference("fettarme");
 
     private static RegistryEntry.Reference<SoundEvent> registerReference(String id) {
         return registerReference(Backrooms.id(id));
